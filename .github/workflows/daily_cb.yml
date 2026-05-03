@@ -1,0 +1,34 @@
+name: 每日CB三大法人買賣超
+
+on:
+  schedule:
+    # 台灣時間下午4點 = UTC 08:00
+    - cron: '0 8 * * 1-5'   # 週一到週五
+  workflow_dispatch:          # 也可手動觸發
+
+jobs:
+  fetch-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 設定 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝套件
+        run: pip install requests pandas openpyxl
+
+      - name: 執行爬蟲
+        run: python cb_inst_trading.py
+
+      - name: 上傳 Excel 到 repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cb_inst_*.xlsx
+          git diff --staged --quiet || git commit -m "每日CB三大法人買賣超 $(date +'%Y/%m/%d')"
+          git push
