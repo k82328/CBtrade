@@ -2,9 +2,9 @@ name: 每日CB三大法人買賣超
 
 on:
   schedule:
-    # 台灣時間下午4點 = UTC 08:00
-    - cron: '0 8 * * 1-5'   # 週一到週五
-  workflow_dispatch:          # 也可手動觸發
+    - cron: '0 8 * * 1-5'
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
 
 jobs:
   fetch-and-upload:
@@ -20,15 +20,20 @@ jobs:
           python-version: '3.11'
 
       - name: 安裝套件
-        run: pip install requests pandas openpyxl
+        run: pip install requests pandas openpyxl beautifulsoup4 lxml
 
-      - name: 執行爬蟲
+      - name: 執行三大法人爬蟲
         run: python cb_inst_trading.py
 
-      - name: 上傳 Excel 到 repo
+      - name: 執行 CB 發行資訊爬蟲（每週一）
+        if: github.event.schedule == '0 1 * * 1' || github.event_name == 'workflow_dispatch'
+        run: python cb_scraper.py
+
+      - name: 推到 GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cb_inst_*.xlsx
-          git diff --staged --quiet || git commit -m "每日CB三大法人買賣超 $(date +'%Y/%m/%d')"
+          git pull --rebase origin main
+          git add cb_inst_*.xlsx cb_inst_latest.json cb_detail_*.xlsx || true
+          git diff --staged --quiet || git commit -m "自動更新 $(date +'%Y/%m/%d %H:%M') UTC"
           git push
