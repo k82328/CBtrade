@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-CB 三大法人日買賣超爬蟲 v5
-每天自動抓當天資料，輸出 cb_inst_YYYYMMDD.xlsx
+CB 三大法人日買賣超爬蟲 v7
+- 若當天無資料，自動往前找最近有資料的交易日（最多回溯5天）
+- 同時輸出 cb_inst_YYYYMMDD.xlsx 和 cb_inst_latest.json
 """
 
-import argparse, time, requests, pandas as pd
+import argparse, time, json, requests, pandas as pd
 from datetime import datetime, timedelta
 
 API = "https://www.tpex.org.tw/www/zh-tw/bond/newCb3itrade"
@@ -27,51 +28,58 @@ def fetch_one_day(dt):
         r = requests.post(API, data=payload, headers=HEADERS, timeout=15)
         r.raise_for_status()
         data = r.json()
-
         if data.get("stat") != "ok":
-            print(f"⚠️  API 回應：{data.get('stat')}")
             return pd.DataFrame()
-
         tables = data.get("tables", [])
         if not tables:
-            print("⚠️  無 tables 欄位")
             return pd.DataFrame()
-
         rows = tables[0].get("data", [])
         if not rows:
-            print("ℹ️  無交易資料（假日或尚未公布）")
             return pd.DataFrame()
-
-        print(f"✅ {len(rows)} 筆")
         return parse_rows(rows, label)
-
     except Exception as e:
-        print(f"⚠️  失敗：{e}")
+        print(f"    ⚠️  {e}")
         return pd.DataFrame()
 
+def fetch_with_fallback(dt, max_lookback=5):
+    """若當天無資料，自動往前找最近有資料的交易日"""
+    checked = 0
+    cur = dt
+    while checked < max_lookback:
+        # 跳過週末
+        if cur.weekday() >= 5:
+            cur -= timedelta(days=1)
+            continue
+        label = cur.strftime("%Y/%m/%d")
+        print(f"  嘗試 {label}...", end=" ", flush=True)
+        df = fetch_one_day(cur)
+        if not df.empty:
+            if cur < dt:
+                print(f"✅ {len(df)} 筆（回溯至 {label}）")
+            else:
+                print(f"✅ {len(df)} 筆")
+            return df
+        else:
+            print("無資料，往前一日")
+            cur -= timedelta(days=1)
+            checked += 1
+        time.sleep(0.8)
+    print(f"  ❌ 往前 {max_lookback} 個交易日均無資料")
+    return pd.DataFrame()
+
 def c(v):
-    try:
-        return int(str(v).replace(",","").replace("--","0").strip() or "0")
-    except:
-        return 0
+    try: return int(str(v).replace(",","").replace("--","0").strip() or "0")
+    except: return 0
 
 def parse_rows(rows, label):
     records = []
     for row in rows:
         records.append({
-            "日期":               label,
-            "CB代號":             str(row[0]).strip(),
-            "CB名稱":             str(row[1]).strip(),
-            "外資_買張":          c(row[2]),
-            "外資_賣張":          c(row[3]),
-            "外資_買賣超":        c(row[4]),
-            "投信_買張":          c(row[5]),
-            "投信_賣張":          c(row[6]),
-            "投信_買賣超":        c(row[7]),
-            "自營_買張":          c(row[8]),
-            "自營_賣張":          c(row[9]),
-            "自營_買賣超":        c(row[10]),
-            "三大法人合計買賣超": c(row[11]) if len(row) > 11 else c(row[4])+c(row[7])+c(row[10]),
+            "日期": label, "CB代號": str(row[0]).strip(), "CB名稱": str(row[1]).strip(),
+            "外資_買張": c(row[2]), "外資_賣張": c(row[3]), "外資_買賣超": c(row[4]),
+            "投信_買張": c(row[5]), "投信_賣張": c(row[6]), "投信_買賣超": c(row[7]),
+            "自營_買張": c(row[8]), "自營_賣張": c(row[9]), "自營_買賣超": c(row[10]),
+            "三大法人合計買賣超": c(row[11]) if len(row)>11 else c(row[4])+c(row[7])+c(row[10]),
         })
     return pd.DataFrame(records)
 
@@ -102,7 +110,18 @@ def save_excel(df, path):
                         if v > 0: cell.fill = green
                         elif v < 0: cell.fill = red
                     except: pass
-    print(f"✅ 已儲存：{path}")
+    print(f"✅ Excel：{path}")
+
+def save_json(df, path):
+    records = df.to_dict(orient="records")
+    out = {
+        "updated": datetime.now().strftime("%Y/%m/%d %H:%M"),
+        "date": df["日期"].iloc[0] if len(df) > 0 else "",
+        "data": records,
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+    print(f"✅ JSON：{path}")
 
 def main():
     parser = argparse.ArgumentParser()
@@ -124,13 +143,13 @@ def main():
     print(f"查詢 {len(targets)} 個交易日...")
     frames = []
     for dt in targets:
-        print(f"  {dt.strftime('%Y/%m/%d')}...", end=" ", flush=True)
-        df = fetch_one_day(dt)
-        if not df.empty: frames.append(df)
+        df = fetch_with_fallback(dt)
+        if not df.empty:
+            frames.append(df)
         time.sleep(1.0)
 
     if not frames:
-        print("\n❌ 無資料（可能是假日或資料尚未公布）")
+        print("\n❌ 無資料")
         return
 
     result = pd.concat(frames, ignore_index=True)
@@ -141,15 +160,18 @@ def main():
 
     dates = result["日期"].unique()
     tag = dates[0].replace("/","") if len(dates)==1 else f"{dates[0].replace('/','')}_to_{dates[-1].replace('/','')}"
-    out = f"cb_inst_{tag}.xlsx"
-    save_excel(result, out)
 
-    last = result[result["日期"]==dates[-1]]
+    save_excel(result, f"cb_inst_{tag}.xlsx")
+
+    # 最新一天輸出 JSON 供網頁使用
+    latest = result[result["日期"]==dates[-1]]
+    save_json(latest, "cb_inst_latest.json")
+
     cols = ["CB代號","CB名稱","外資_買賣超","投信_買賣超","自營_買賣超","三大法人合計買賣超"]
-    print(f"\n📊 {dates[-1]} 三大法人買超前5：")
-    print(last.nlargest(5,"三大法人合計買賣超")[cols].to_string(index=False))
-    print(f"\n📊 {dates[-1]} 三大法人賣超前5：")
-    print(last.nsmallest(5,"三大法人合計買賣超")[cols].to_string(index=False))
+    print(f"\n📊 {dates[-1]} 買超前5：")
+    print(latest.nlargest(5,"三大法人合計買賣超")[cols].to_string(index=False))
+    print(f"\n📊 {dates[-1]} 賣超前5：")
+    print(latest.nsmallest(5,"三大法人合計買賣超")[cols].to_string(index=False))
 
 if __name__ == "__main__":
     main()
