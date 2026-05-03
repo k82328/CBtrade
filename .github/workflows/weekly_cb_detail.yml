@@ -1,12 +1,12 @@
-name: 每日CB三大法人買賣超
+name: 每週CB發行資訊更新
 
 on:
   schedule:
-    - cron: '0 8 * * 1-5'
+    - cron: '0 1 * * 1'
   workflow_dispatch:
 
 jobs:
-  fetch-and-upload:
+  fetch-cb-detail:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,15 +14,15 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests pandas openpyxl beautifulsoup4 lxml
-      - run: python cb_inst_trading.py
+      - run: python cb_scraper.py
       - name: 推到 GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cb_inst_*.xlsx cb_inst_latest.json || true
+          git add cb_detail_*.xlsx || true
           git stash || true
           git pull --rebase origin main || true
           git stash pop || true
-          git add cb_inst_*.xlsx cb_inst_latest.json || true
-          git diff --staged --quiet || git commit -m "三大法人更新 $(date +'%Y/%m/%d %H:%M') UTC"
+          git add cb_detail_*.xlsx || true
+          git diff --staged --quiet || git commit -m "CB發行資訊更新 $(date +'%Y/%m/%d %H:%M') UTC"
           git push
