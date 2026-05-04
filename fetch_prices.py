@@ -485,55 +485,7 @@ render();
 </html>"""
     return html
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--show",       action="store_true")
-    parser.add_argument("--cb-only",    action="store_true")
-    parser.add_argument("--stock-only", action="store_true")
-    args = parser.parse_args()
-
-    print("="*50)
-    print(f"  CB報價工具  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*50)
-
-    records     = load_cb_excel()
-    cb_codes    = [r["cb_code"] for r in records]
-    stock_codes = sorted(set(r["stock"] for r in records))
-
-    cb_prices    = {}
-    stock_prices = {}
-
-    if not args.stock_only:
-        cb_prices = fetch_all(cb_codes, "抓CB現價", try_tse=False)
-    if not args.cb_only:
-        stock_prices = fetch_all(stock_codes, "抓股票現價", try_tse=True)
-
-    # 儲存 prices.json
-    result = {"stock_prices": stock_prices, "cb_prices": cb_prices}
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"\n✓ 儲存 {OUTPUT_FILE}")
-
-    # 產生更新的 HTML
-    update_time = datetime.now().strftime('%Y-%m-%d %H:%M')
-    html = generate_html(records, cb_prices, stock_prices, update_time)
-    with open(HTML_FILE, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"✓ 更新 {HTML_FILE}（{len(records)} 筆CB，股價{len(stock_prices)}筆，CB現價{len(cb_prices)}筆）")
-
-    if args.show:
-        print(f"\n股票 {len(stock_prices)} 筆 / CB {len(cb_prices)} 筆")
-
-    save_tracker_json(records, cb_prices, stock_prices)
-    print("="*50)
-    print("完成！直接打開 cb_tracker.html 即可，不需要貼 JSON。")
-    print("="*50)
-
-if __name__ == "__main__":
-    main()
-
-
-# ── 額外輸出 JSON 供網頁使用 ──────────────────────────
+SAVE_TRACKER_PLACEHOLDER
 def save_tracker_json(records, cb_prices, stock_prices):
     INDUSTRY = {
       "1101":"水泥","1256":"食品","1316":"化學","1338":"化學","1402":"紡織",
@@ -641,3 +593,53 @@ def save_tracker_json(records, cb_prices, stock_prices):
     with open("cb_tracker_latest.json","w",encoding="utf-8") as f:
         json.dump(out,f,ensure_ascii=False,indent=2)
     print(f"✓ 儲存 cb_tracker_latest.json（{len(data)} 筆）")
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--show",       action="store_true")
+    parser.add_argument("--cb-only",    action="store_true")
+    parser.add_argument("--stock-only", action="store_true")
+    args = parser.parse_args()
+
+    print("="*50)
+    print(f"  CB報價工具  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("="*50)
+
+    records     = load_cb_excel()
+    cb_codes    = [r["cb_code"] for r in records]
+    stock_codes = sorted(set(r["stock"] for r in records))
+
+    cb_prices    = {}
+    stock_prices = {}
+
+    if not args.stock_only:
+        cb_prices = fetch_all(cb_codes, "抓CB現價", try_tse=False)
+    if not args.cb_only:
+        stock_prices = fetch_all(stock_codes, "抓股票現價", try_tse=True)
+
+    # 儲存 prices.json
+    result = {"stock_prices": stock_prices, "cb_prices": cb_prices}
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print(f"\n✓ 儲存 {OUTPUT_FILE}")
+
+    # 產生更新的 HTML
+    update_time = datetime.now().strftime('%Y-%m-%d %H:%M')
+    html = generate_html(records, cb_prices, stock_prices, update_time)
+    with open(HTML_FILE, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"✓ 更新 {HTML_FILE}（{len(records)} 筆CB，股價{len(stock_prices)}筆，CB現價{len(cb_prices)}筆）")
+
+    if args.show:
+        print(f"\n股票 {len(stock_prices)} 筆 / CB {len(cb_prices)} 筆")
+
+    save_tracker_json(records, cb_prices, stock_prices)
+    print("="*50)
+    print("完成！直接打開 cb_tracker.html 即可，不需要貼 JSON。")
+    print("="*50)
+
+if __name__ == "__main__":
+    main()
+
+
+# ── 額外輸出 JSON 供網頁使用 ──────────────────────────
