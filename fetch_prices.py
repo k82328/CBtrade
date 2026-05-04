@@ -485,7 +485,6 @@ render();
 </html>"""
     return html
 
-SAVE_TRACKER_PLACEHOLDER
 def save_tracker_json(records, cb_prices, stock_prices):
     INDUSTRY = {
       "1101":"水泥","1256":"食品","1316":"化學","1338":"化學","1402":"紡織",
