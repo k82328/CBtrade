@@ -58,6 +58,7 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
 .nodata{text-align:center;padding:40px;color:#aaa;font-size:13px}
 .loading{text-align:center;padding:40px;color:#aaa;font-size:13px}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 <div class="header">
@@ -84,6 +85,7 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
       <option value="50">50筆</option><option value="100">100筆</option><option value="9999">全部</option>
     </select>
     <span class="cnt" id="vc"></span>
+    <button onclick="exportVal()" style="margin-left:4px;padding:5px 12px;border:1px solid #1a73e8;border-radius:5px;background:#fff;color:#1a73e8;cursor:pointer;font-size:12px">⬇ 匯出 Excel</button>
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
@@ -127,6 +129,7 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
       <option value="50">50筆</option><option value="100">100筆</option><option value="9999">全部</option>
     </select>
     <span class="cnt" id="ic"></span>
+    <button onclick="exportInst()" style="margin-left:4px;padding:5px 12px;border:1px solid #1a73e8;border-radius:5px;background:#fff;color:#1a73e8;cursor:pointer;font-size:12px">⬇ 匯出 Excel</button>
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
@@ -336,6 +339,53 @@ function ri(){
     const arr=th.querySelector('.arr');
     if(arr)arr.textContent=k===iSk?(iSd>0?'↑':'↓'):'↕';
   });
+}
+
+
+// ── 匯出 Excel ──
+function exportVal(){
+  const rows = gvf().sort((a,b)=>{
+    const av=a[vSk],bv=b[vSk];
+    if(av===null&&bv===null)return 0;if(av===null)return 1;if(bv===null)return-1;
+    return vSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const data = [['CB代號','股票','名稱','產業','轉換價','股票現價','CB現價','理論價','CB/理論%','股/轉換%']];
+  rows.forEach(d=>{
+    data.push([
+      d.cb, d.stk, d.name, d.ind||'—',
+      d.conv??'', d.sp??'', d.cbp??'', d.th??'',
+      d.cbth??'', d.stk2??''
+    ]);
+  });
+  const ws = XLSX.utils.aoa_to_sheet(data);
+  ws['!cols'] = [{wch:10},{wch:8},{wch:16},{wch:10},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:10}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'CB估值');
+  XLSX.writeFile(wb, 'cb_valuation_'+new Date().toISOString().slice(0,10)+'.xlsx');
+}
+
+function exportInst(){
+  const rows = gif().sort((a,b)=>{
+    const av=a[iSk]||0,bv=b[iSk]||0;
+    return iSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const data = [['CB代號','CB名稱','外資買張','外資賣張','外資買賣超','投信買張','投信賣張','投信買賣超','自營買張','自營賣張','自營買賣超','三大法人合計買賣超','買超方向']];
+  rows.forEach(d=>{
+    data.push([
+      d['CB代號'], d['CB名稱'],
+      d['外資_買張']||0, d['外資_賣張']||0, d['外資_買賣超']||0,
+      d['投信_買張']||0, d['投信_賣張']||0, d['投信_買賣超']||0,
+      d['自營_買張']||0, d['自營_賣張']||0, d['自營_買賣超']||0,
+      d['三大法人合計買賣超']||0,
+      (d['三大法人合計買賣超']||0)>0?'買超':(d['三大法人合計買賣超']||0)<0?'賣超':'持平'
+    ]);
+  });
+  const ws = XLSX.utils.aoa_to_sheet(data);
+  ws['!cols'] = [{wch:10},{wch:16},{wch:8},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:12},{wch:8}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '三大法人買賣超');
+  const date = (INST[0]?.['日期']||'').replace(/\//g,'-');
+  XLSX.writeFile(wb, 'cb_inst_'+date+'.xlsx');
 }
 
 // 啟動
