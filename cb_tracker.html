@@ -26,6 +26,13 @@ thead th:nth-child(-n+3) { text-align: left; }
 tbody tr:hover { background: #f0f6ff; }
 tbody tr:nth-child(even) { background: #fafafa; }
 tbody tr:nth-child(even):hover { background: #f0f6ff; }
+tbody tr.row-checked { background: #e4e4e4 !important; }
+tbody tr.row-checked:hover { background: #d8d8d8 !important; }
+input.note-in { background: none; border: none; border-bottom: 1px dashed #ccc; width: 100%; min-width: 90px; font-size: 12px; padding: 1px 2px; outline: none; color: #222; font-family: inherit; }
+input.note-in:focus { border-bottom-color: #1a73e8; background: #f0f6ff; }
+tbody tr.row-checked { background: #e4e4e4 !important; }
+tbody tr.row-checked:hover { background: #d8d8d8 !important; }
+input.note-in { background: none; border: none; border-bottom: 1px dashed #ccc; width: 100%; min-width: 90px; font-size: 12px; padding: 1px 2px; outline: none; color: #222; font-family: inherit; }
 tbody td { padding: 5px 8px; border-bottom: 1px solid #eee; text-align: right; }
 tbody td:nth-child(-n+3) { text-align: left; }
 .cb-name { font-weight: 500; }
@@ -54,7 +61,7 @@ input.cell-in.has-val { color: #1a73e8; font-weight: 500; }
   <h1>CB 可轉債追蹤</h1>
   <button class="primary" onclick="openModal()">匯入報價 JSON</button>
   <button onclick="exportCSV()">匯出 CSV</button>
-  <span id="lastUpdate" class="status">資料更新時間：2026-05-19 20:03</span>
+  <span id="lastUpdate" class="status">資料更新時間：2026-05-19 20:07</span>
 </div>
 
 <div class="summary">
@@ -92,6 +99,7 @@ input.cell-in.has-val { color: #1a73e8; font-weight: 500; }
 <div class="tbl-wrap">
 <table>
 <thead><tr>
+  <th style="width:32px;text-align:center">✓</th>
   <th style="width:70px;text-align:left">CB代號</th>
   <th style="width:68px;text-align:left">股票</th>
   <th style="width:115px;text-align:left">名稱</th>
@@ -102,6 +110,7 @@ input.cell-in.has-val { color: #1a73e8; font-weight: 500; }
   <th style="width:76px">CB現價</th>
   <th style="width:72px">CB/理論</th>
   <th style="width:70px">股/轉換</th>
+  <th style="min-width:110px;text-align:left">備註</th>
 </tr></thead>
 <tbody id="tbody"></tbody>
 </table>
@@ -552,6 +561,17 @@ function getFiltered() {
   return arr;
 }
 
+
+// localStorage：儲存打勾 & 備註
+const LS_KEY = 'cb_user_meta';
+let userMeta = {};
+try { userMeta = JSON.parse(localStorage.getItem(LS_KEY) || '{}'); } catch(e) {}
+function setMeta(cbCode, field, val) {
+  if (!userMeta[cbCode]) userMeta[cbCode] = {};
+  userMeta[cbCode][field] = val;
+  try { localStorage.setItem(LS_KEY, JSON.stringify(userMeta)); } catch(e) {}
+}
+
 function render() {
   const filtered = getFiltered();
   document.getElementById('tbody').innerHTML = filtered.map(d => {
@@ -560,7 +580,10 @@ function render() {
     const cr = (d.cbPrice&&t)?d.cbPrice/t*100:null;
     const sr = (d.stockPrice&&d.conv)?d.stockPrice/d.conv*100:null;
     const spClass = d.stockPrice ? 'has-val' : '';
-    return `<tr data-idx="${idx}">
+    const isChk = userMeta[d.cbCode]?.checked || false;
+    const noteVal = (userMeta[d.cbCode]?.note || '').replace(/"/g,'&quot;');
+    return `<tr data-idx="${idx}" class="${isChk?'row-checked':''}">
+      <td style="text-align:center"><input type="checkbox" ${isChk?'checked':''} onchange="setMeta('${d.cbCode}','checked',this.checked);render()"></td>
       <td><input class="cell-in" type="text" value="${d.cbCode}" style="width:68px;color:#999;font-size:11px" onblur="cbData[${idx}].cbCode=this.value"></td>
       <td><input class="cell-in" type="text" value="${d.stock}" style="width:58px;color:#999;font-size:11px" onblur="cbData[${idx}].stock=this.value;refreshRow(${idx})"></td>
       <td class="cb-name">${d.name}</td>
@@ -571,6 +594,7 @@ function render() {
       <td><input class="cell-in" type="number" step="0.05" value="${d.cbPrice??''}" placeholder="—" onblur="upCB(${idx},this.value)"></td>
       <td>${badge(cr)}</td>
       <td>${badge(sr)}</td>
+      <td><input class="note-in" type="text" value="${noteVal}" placeholder="備註…" onchange="setMeta('${d.cbCode}','note',this.value)"></td>
     </tr>`;
   }).join('');
   document.getElementById('countLabel').textContent = `顯示 ${filtered.length} / ${cbData.length}`;
@@ -597,6 +621,7 @@ function refreshRow(idx) {
   tds[6].innerHTML = t ? `<span style="color:#888">${fmt(t)}</span>` : '<span class="na">—</span>';
   tds[8].innerHTML = badge(cr);
   tds[9].innerHTML = badge(sr);
+  tr.className = (userMeta[d.cbCode]?.checked) ? 'row-checked' : '';
   const spInput = tds[5].querySelector('input');
   if (spInput) spInput.className = 'cell-in' + (d.stockPrice?' has-val':'');
 }
