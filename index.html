@@ -274,13 +274,13 @@ function rv(){
     return`<span class="badge prem">${Number(v).toFixed(1)}%</span>`;
   };
   document.getElementById('vb').innerHTML=sl.map(d=>{const isChk=userMeta[d.cb]?.checked||false;const noteVal=(userMeta[d.cb]?.note||'').replace(/"/g,'&quot;');return`<tr class="${isChk?'row-checked':''}">
+    <td style="text-align:center"><input type="checkbox" ${isChk?'checked':''} onchange="setMeta('${d.cb}','checked',this.checked);rv()"></td>
     <td class="left mono">${d.cb}</td><td class="left mono">${d.stk}</td>
     <td class="left">${d.name}</td><td class="left" style="color:#888;font-size:11px">${d.ind||'—'}</td>
     <td>${f(d.conv)}</td><td>${f(d.sp)}</td><td>${f(d.cbp)}</td>
     <td>${f(d.th)}</td><td>${vb(d.cbth)}</td>
     <td>${d.stk2!==null&&d.stk2!==undefined?f(d.stk2,1)+'%':'<span class="na">—</span>'}</td>
     <td><input class="note-in" type="text" value="${noteVal}" placeholder="備註…" onchange="setMeta('${d.cb}','note',this.value)"></td>
-    <td style="text-align:center"><input type="checkbox" ${isChk?'checked':''} onchange="setMeta('${d.cb}','checked',this.checked);rv()"></td>
   </tr>`}).join('');
 
   document.getElementById('vpi').textContent=`第 ${vPg} / ${tp} 頁`;
