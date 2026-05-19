@@ -14,7 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests pandas openpyxl
+      - run: pip install requests pandas openpyxl gspread google-auth
+      - name: 設定 Google 憑證
+        run: |
+          echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > credentials.json
       - run: python fetch_prices.py
       - name: 推到 GitHub
         run: |
