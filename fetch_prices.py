@@ -124,7 +124,7 @@ INDUSTRY = {
 def get_price(item):
     z = item.get("z", "-")
     y = item.get("y", "-")
-    val = z if (z and z != "-") else y
+    pz = item.get("pz", "-"); h = item.get("h", "-"); val = z if (z and z != "-") else (pz if (pz and pz != "-") else (h if (h and h != "-" and h != "0") else y))
     try: return round(float(val), 2)
     except: return None
 
@@ -633,12 +633,55 @@ def main():
         print(f"\n股票 {len(stock_prices)} 筆 / CB {len(cb_prices)} 筆")
 
     save_tracker_json(records, cb_prices, stock_prices)
+    update_google_sheet(records, cb_prices)
     print("="*50)
     print("完成！直接打開 cb_tracker.html 即可，不需要貼 JSON。")
     print("="*50)
+
+
+def update_google_sheet(records, cb_prices):
+    try:
+        import gspread
+        from google.oauth2.service_account import Credentials
+        import os
+
+        SHEET_ID  = "1BVNzkag83tgyzdv4FQ8qRRVBpmOrYM8k4v0va0P_-rk"
+        CREDS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "credentials.json")
+        SHEET_NAME = "CB持股"
+
+        scopes = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive"
+        ]
+        creds = Credentials.from_service_account_file(CREDS_FILE, scopes=scopes)
+        gc = gspread.authorize(creds)
+        ws = gc.open_by_key(SHEET_ID).worksheet(SHEET_NAME)
+
+        all_values = ws.get_all_values()
+        updates = []
+        for i, row in enumerate(all_values[2:], start=3):
+            if not row or not row[0]:
+                continue
+            cb_code = str(row[0]).strip()
+            price = cb_prices.get(cb_code)
+            if price is not None:
+                updates.append({"range": f"I{i}", "values": [[price]]})
+
+        if updates:
+            ws.batch_update(updates)
+            print(f"✓ 已更新 Google Sheets（{len(updates)} 筆現價）")
+        else:
+            print("⚠ Google Sheets：找不到對應的 CB 代號")
+
+    except Exception as e:
+        print(f"⚠ Google Sheets 更新失敗：{e}")
+
+
+
+
+# ── 額外輸出 JSON 供網頁使用 ──────────────────────────
 
 if __name__ == "__main__":
     main()
 
 
-# ── 額外輸出 JSON 供網頁使用 ──────────────────────────
