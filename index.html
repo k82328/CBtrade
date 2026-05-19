@@ -39,6 +39,10 @@ td{padding:5px 8px;border-bottom:1px solid #eee;text-align:right;white-space:now
 td.left{text-align:left}
 td.mono{font-family:monospace;font-size:11px;color:#777}
 .badge{font-size:11px;border-radius:3px;padding:1px 6px;display:inline-block;font-weight:600}
+.row-checked{background:#e4e4e4 !important}
+.row-checked:hover{background:#d8d8d8 !important}
+.note-in{background:none;border:none;border-bottom:1px dashed #ccc;width:100%;min-width:90px;font-size:12px;padding:1px 2px;outline:none;color:#222;font-family:inherit}
+.note-in:focus{border-bottom-color:#1a73e8;background:#f0f6ff}
 .cheap{background:#d4edda;color:#155724}
 .fair{background:#cce5ff;color:#004085}
 .prem{background:#ffeeba;color:#856404}
@@ -58,7 +62,18 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
 .nodata{text-align:center;padding:40px;color:#aaa;font-size:13px}
 .loading{text-align:center;padding:40px;color:#aaa;font-size:13px}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js">
+// localStorage：儲存打勾 & 備註
+const LS_KEY='cb_user_meta';
+let userMeta={};
+try{userMeta=JSON.parse(localStorage.getItem(LS_KEY)||'{}');}catch(e){}
+function setMeta(cbCode,field,val){
+  if(!userMeta[cbCode])userMeta[cbCode]={};
+  userMeta[cbCode][field]=val;
+  try{localStorage.setItem(LS_KEY,JSON.stringify(userMeta));}catch(e){}
+}
+
+</script>
 </head>
 <body>
 <div class="header">
@@ -89,6 +104,7 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
   </div>
   <div class="tbl-wrap"><table>
     <thead><tr>
+      <th style="width:32px;text-align:center">✓</th>
       <th class="left" onclick="sv('cb')">CB代號<span class="arr">↕</span></th>
       <th class="left" onclick="sv('stk')">股票<span class="arr">↕</span></th>
       <th class="left" onclick="sv('name')">名稱<span class="arr">↕</span></th>
@@ -99,6 +115,7 @@ td.mono{font-family:monospace;font-size:11px;color:#777}
       <th onclick="sv('th')">理論價<span class="arr">↕</span></th>
       <th onclick="sv('cbth')">CB/理論%<span class="arr">↕</span></th>
       <th onclick="sv('stk2')">股/轉換%<span class="arr">↕</span></th>
+      <th class="left" style="min-width:110px">備註</th>
     </tr></thead>
     <tbody id="vb"></tbody>
   </table></div>
@@ -255,13 +272,15 @@ function rv(){
     if(v<=120)return`<span class="badge fair">${Number(v).toFixed(1)}%</span>`;
     return`<span class="badge prem">${Number(v).toFixed(1)}%</span>`;
   };
-  document.getElementById('vb').innerHTML=sl.map(d=>`<tr>
+  document.getElementById('vb').innerHTML=sl.map(d=>{const isChk=userMeta[d.cb]?.checked||false;const noteVal=(userMeta[d.cb]?.note||'').replace(/"/g,'&quot;');return`<tr class="${isChk?'row-checked':''}">
     <td class="left mono">${d.cb}</td><td class="left mono">${d.stk}</td>
     <td class="left">${d.name}</td><td class="left" style="color:#888;font-size:11px">${d.ind||'—'}</td>
     <td>${f(d.conv)}</td><td>${f(d.sp)}</td><td>${f(d.cbp)}</td>
     <td>${f(d.th)}</td><td>${vb(d.cbth)}</td>
     <td>${d.stk2!==null&&d.stk2!==undefined?f(d.stk2,1)+'%':'<span class="na">—</span>'}</td>
-  </tr>`).join('');
+    <td><input class="note-in" type="text" value="${noteVal}" placeholder="備註…" onchange="setMeta('${d.cb}','note',this.value)"></td>
+    <td style="text-align:center"><input type="checkbox" ${isChk?'checked':''} onchange="setMeta('${d.cb}','checked',this.checked);rv()"></td>
+  </tr>`}).join('');
 
   document.getElementById('vpi').textContent=`第 ${vPg} / ${tp} 頁`;
   document.getElementById('vpp').disabled=vPg<=1;
