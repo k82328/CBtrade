@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CB 可轉債追蹤</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:13px;background:#f5f5f5;color:#222}
+.header{background:#fff;border-bottom:1px solid #ddd;padding:0 16px;display:flex;align-items:center;height:50px;position:sticky;top:0;z-index:100;gap:12px}
+.header h1{font-size:15px;font-weight:700;color:#1a73e8}
+.hdate{font-size:11px;color:#999;margin-left:auto}
+.tabs{display:flex;background:#fff;border-bottom:2px solid #e0e0e0;padding:0 16px}
+.tab{padding:10px 18px;cursor:pointer;font-size:13px;font-weight:500;color:#777;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s}
+.tab:hover{color:#333}
+.tab.active{color:#1a73e8;border-bottom-color:#1a73e8}
+.panel{display:none;padding:12px 16px}
+.panel.active{display:block}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.stat{background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:6px 14px}
+.stat-l{font-size:10px;color:#888}
+.stat-v{font-size:18px;font-weight:700}
+.green{color:#27ae60}.blue{color:#1a73e8}.orange{color:#e67e22}.red{color:#e74c3c}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+input[type=text],select{padding:5px 8px;border:1px solid #ccc;border-radius:5px;font-size:12px;background:#fff;color:#222}
+input[type=text]:focus,select:focus{outline:none;border-color:#1a73e8}
+.cnt{font-size:11px;color:#999;margin-left:auto}
+.tbl-wrap{overflow-x:auto;background:#fff;border:1px solid #e0e0e0;border-radius:6px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+thead th{background:#fafafa;border-bottom:2px solid #ddd;padding:7px 8px;text-align:right;font-weight:600;font-size:11px;color:#555;white-space:nowrap;cursor:pointer;user-select:none}
+thead th.left{text-align:left}
+thead th:hover{color:#1a73e8}
+.arr{margin-left:3px;font-size:9px;opacity:.4}
+th.sk .arr{opacity:1;color:#1a73e8}
+tbody tr:hover td{background:#f0f6ff}
+tbody tr:nth-child(even) td{background:#fafafa}
+tbody tr:nth-child(even):hover td{background:#f0f6ff}
+td{padding:5px 8px;border-bottom:1px solid #eee;text-align:right;white-space:nowrap}
+td.left{text-align:left}
+td.mono{font-family:monospace;font-size:11px;color:#777}
+.badge{font-size:11px;border-radius:3px;padding:1px 6px;display:inline-block;font-weight:600}
+.row-checked td{background:#c8c8c8 !important}
+.row-checked:hover td{background:#bbbbbb !important}
+.note-in{background:none;border:none;border-bottom:1px dashed #ccc;width:100%;min-width:90px;font-size:12px;padding:1px 2px;outline:none;color:#222;font-family:inherit}
+.note-in:focus{border-bottom-color:#1a73e8;background:#f0f6ff}
+.cheap{background:#d4edda;color:#155724}
+.fair{background:#cce5ff;color:#004085}
+.prem{background:#ffeeba;color:#856404}
+.buy{background:#d4edda;color:#155724}
+.sell{background:#fde8e8;color:#c0392b}
+.flat{background:#f0f0f0;color:#888}
+.na{color:#ccc}
+.bar-wrap{display:flex;align-items:center;justify-content:flex-end;gap:4px}
+.bar{height:10px;border-radius:2px}
+.bar.p{background:#27ae60}.bar.n{background:#e74c3c}
+.bv{font-family:monospace;font-size:11px;min-width:42px;text-align:right}
+.bv.p{color:#27ae60;font-weight:600}.bv.n{color:#e74c3c;font-weight:600}.bv.z{color:#ccc}
+.pager{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:12px;color:#888}
+.pager button{padding:4px 12px;border:1px solid #ccc;border-radius:5px;background:#fff;cursor:pointer;font-size:12px}
+.pager button:hover{border-color:#1a73e8;color:#1a73e8}
+.pager button:disabled{opacity:.3;cursor:default}
+.nodata{text-align:center;padding:40px;color:#aaa;font-size:13px}
+.loading{text-align:center;padding:40px;color:#aaa;font-size:13px}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+// localStorage：儲存打勾 & 備註
+const LS_KEY='cb_user_meta';
+let userMeta={};
+try{userMeta=JSON.parse(localStorage.getItem(LS_KEY)||'{}');}catch(e){}
+function setMeta(cbCode,field,val){
+  if(!userMeta[cbCode])userMeta[cbCode]={};
+  userMeta[cbCode][field]=val;
+  try{localStorage.setItem(LS_KEY,JSON.stringify(userMeta));}catch(e){}
+}
+
+</script>
+</head>
+<body>
+<div class="header">
+  <h1>📊 CB 可轉債追蹤</h1>
+  <div class="hdate" id="hdate">載入中...</div>
+</div>
+<div class="tabs">
+  <div class="tab active" onclick="showTab('v')">CB 估值</div>
+  <div class="tab" onclick="showTab('i')">三大法人買賣超</div>
+</div>
+
+<div id="pv" class="panel active">
+  <div class="summary" id="vs"></div>
+  <div class="toolbar">
+    <input type="text" id="vsq" placeholder="搜尋名稱/代號" oninput="rv()">
+    <select id="vsi" onchange="rv()"><option value="">所有產業</option></select>
+    <select id="vst" onchange="rv()">
+      <option value="">全部估值</option>
+      <option value="cheap">便宜 (&lt;100%)</option>
+      <option value="fair">合理 (100-120%)</option>
+      <option value="prem">溢價 (&gt;120%)</option>
+    </select>
+    <select id="vps" onchange="rv()">
+      <option value="50">50筆</option><option value="100">100筆</option><option value="9999">全部</option>
+    </select>
+    <span class="cnt" id="vc"></span>
+    <button onclick="exportVal()" style="margin-left:4px;padding:5px 12px;border:1px solid #1a73e8;border-radius:5px;background:#fff;color:#1a73e8;cursor:pointer;font-size:12px">⬇ 匯出 Excel</button>
+  </div>
+  <div class="tbl-wrap"><table>
+    <thead><tr>
+      <th style="width:32px;text-align:center">✓</th>
+      <th class="left" onclick="sv('cb')">CB代號<span class="arr">↕</span></th>
+      <th class="left" onclick="sv('stk')">股票<span class="arr">↕</span></th>
+      <th class="left" onclick="sv('name')">名稱<span class="arr">↕</span></th>
+      <th class="left" onclick="sv('ind')">產業<span class="arr">↕</span></th>
+      <th onclick="sv('conv')">轉換價<span class="arr">↕</span></th>
+      <th onclick="sv('sp')">股票現價<span class="arr">↕</span></th>
+      <th onclick="sv('cbp')">CB現價<span class="arr">↕</span></th>
+      <th onclick="sv('th')">理論價<span class="arr">↕</span></th>
+      <th onclick="sv('cbth')">CB/理論%<span class="arr">↕</span></th>
+      <th onclick="sv('stk2')">股/轉換%<span class="arr">↕</span></th>
+      <th class="left" style="min-width:110px">備註</th>
+    </tr></thead>
+    <tbody id="vb"></tbody>
+  </table></div>
+  <div class="pager">
+    <button id="vpp" onclick="vgo(-1)">← 上頁</button>
+    <span id="vpi"></span>
+    <button id="vpn" onclick="vgo(1)">下頁 →</button>
+  </div>
+  <div id="vloading" class="loading">載入估值資料中...</div>
+</div>
+
+<div id="pi" class="panel">
+  <div class="summary" id="is"></div>
+  <div class="toolbar">
+    <input type="text" id="isq" placeholder="搜尋名稱/代號" oninput="ri()">
+    <select id="ist" onchange="ri()">
+      <option value="">全部</option>
+      <option value="buy">買超</option>
+      <option value="sell">賣超</option>
+    </select>
+    <select id="isw" onchange="ri()">
+      <option value="三大法人合計買賣超">三大法人合計</option>
+      <option value="外資_買賣超">外資</option>
+      <option value="投信_買賣超">投信</option>
+      <option value="自營_買賣超">自營商</option>
+    </select>
+    <select id="ips" onchange="ri()">
+      <option value="50">50筆</option><option value="100">100筆</option><option value="9999">全部</option>
+    </select>
+    <span class="cnt" id="ic"></span>
+    <button onclick="exportInst()" style="margin-left:4px;padding:5px 12px;border:1px solid #1a73e8;border-radius:5px;background:#fff;color:#1a73e8;cursor:pointer;font-size:12px">⬇ 匯出 Excel</button>
+  </div>
+  <div class="tbl-wrap"><table>
+    <thead><tr>
+      <th class="left" onclick="si('CB代號')">CB代號<span class="arr">↕</span></th>
+      <th class="left" onclick="si('CB名稱')">名稱<span class="arr">↕</span></th>
+      <th onclick="si('外資_買賣超')">外資<span class="arr">↕</span></th>
+      <th onclick="si('投信_買賣超')">投信<span class="arr">↕</span></th>
+      <th onclick="si('自營_買賣超')">自營<span class="arr">↕</span></th>
+      <th onclick="si('三大法人合計買賣超')">三大法人合計<span class="arr">↕</span></th>
+      <th>方向</th>
+    </tr></thead>
+    <tbody id="ib"></tbody>
+  </table></div>
+  <div class="pager">
+    <button id="ipp" onclick="igo(-1)">← 上頁</button>
+    <span id="ipi"></span>
+    <button id="ipn" onclick="igo(1)">下頁 →</button>
+  </div>
+  <div id="ind" class="nodata" style="display:none">尚無三大法人資料</div>
+  <div id="iloading" class="loading" style="display:none">載入法人資料中...</div>
+</div>
+
+<script>
+const INDUSTRY = {"1101": "水泥", "1256": "食品", "1316": "化學", "1338": "化學", "1402": "紡織", "1436": "紡織", "1438": "紡織", "1466": "紡織", "1472": "紡織", "1474": "紡織", "1514": "電機", "1526": "汽車", "1536": "汽車", "1560": "機械", "1586": "塑膠", "1589": "其他", "1595": "其他", "1598": "運動休閒", "1609": "電線電纜", "1786": "生技醫療", "1909": "造紙", "2034": "鋼鐵", "2066": "鋼鐵", "2104": "橡膠", "2201": "汽車", "2228": "汽車零件", "2233": "汽車零件", "2236": "汽車零件", "2247": "汽車", "2329": "半導體", "2337": "半導體", "2338": "半導體", "2351": "電子零組件", "2368": "半導體", "2374": "電腦周邊", "2402": "電子零組件", "2427": "電子通路", "2436": "半導體", "2439": "電子零組件", "2442": "電子零組件", "2455": "半導體", "2462": "電子零組件", "2464": "電子零組件", "2467": "半導體設備", "2476": "電子零組件", "2486": "電子零組件", "2528": "建設", "2530": "建設", "2548": "建設", "2610": "航運", "2641": "航運", "2727": "餐飲", "2732": "餐飲", "2743": "觀光", "2745": "觀光", "2753": "餐飲", "2755": "餐飲", "2756": "餐飲", "2906": "百貨", "3006": "半導體", "3011": "其他電子", "3013": "其他電子", "3016": "半導體", "3032": "電子通路", "3033": "電子通路", "3037": "PCB", "3040": "其他電子", "3045": "電信", "3088": "其他電子", "3092": "電子零組件", "3095": "其他電子", "3122": "半導體", "3128": "其他電子", "3131": "半導體設備", "3135": "半導體", "3138": "電子零組件", "3141": "半導體", "3167": "半導體設備", "3188": "其他電子", "3207": "其他電子", "3257": "其他電子", "3260": "電腦周邊", "3272": "其他電子", "3284": "其他電子", "3303": "光電", "3305": "電子通路", "3312": "其他電子", "3313": "其他電子", "3322": "其他電子", "3323": "電子零組件", "3324": "散熱", "3346": "光電", "3357": "其他電子", "3362": "光電", "3376": "電子零組件", "3388": "電子通路", "3390": "其他電子", "3416": "其他電子", "3479": "其他電子", "3483": "其他電子", "3484": "其他電子", "3516": "其他電子", "3518": "其他電子", "3522": "其他電子", "3526": "電子零組件", "3543": "其他電子", "3548": "其他電子", "3551": "半導體設備", "3564": "其他電子", "3583": "半導體設備", "3587": "半導體設備", "3591": "光電", "3605": "電子零組件", "3617": "電源供應", "3680": "半導體設備", "3684": "生技", "3687": "電競", "3689": "其他電子", "3691": "太陽能", "3701": "電子通路", "3702": "電子通路", "3707": "半導體", "3708": "再生能源", "3715": "其他電子", "3717": "電子通路", "4113": "生技醫療", "4123": "生技醫療", "4129": "生技醫療", "4137": "生技醫療", "4164": "生技醫療", "4168": "生技醫療", "4190": "生技醫療", "4416": "建設", "4438": "其他", "4439": "其他", "4442": "其他", "4510": "機械", "4542": "機械", "4549": "其他電子", "4555": "機械", "4558": "其他電子", "4564": "其他電子", "4566": "機械", "4569": "其他", "4572": "其他電子", "4581": "其他", "4722": "化學", "4739": "電子零組件", "4747": "生技", "4772": "化學", "4906": "通訊網路", "4916": "通訊網路", "4923": "其他電子", "4967": "電腦周邊", "4979": "光電", "5009": "鋼鐵", "5201": "通訊網路", "5209": "工程顧問", "5212": "其他電子", "5230": "光電", "5244": "其他電子", "5245": "半導體", "5263": "觀光", "5306": "機械", "5309": "電子通路", "5321": "其他", "5388": "通訊網路", "5434": "電子通路", "5439": "生技", "5450": "紡織", "5457": "電子零組件", "5534": "建設", "5608": "航運", "5905": "觀光", "6015": "證券", "6101": "餐飲", "6104": "半導體", "6111": "光電", "6117": "電源供應", "6125": "機械", "6126": "電子零組件", "6150": "顯示卡", "6156": "其他電子", "6163": "通訊網路", "6177": "建設", "6179": "其他電子", "6182": "半導體", "6184": "有線電視", "6187": "自動化", "6189": "電子通路", "6190": "通訊網路", "6197": "電子零組件", "6199": "生技", "6207": "其他電子", "6209": "光電", "6219": "建設", "6243": "半導體", "6269": "PCB", "6274": "PCB", "6275": "其他電子", "6282": "電源供應", "6284": "電子零組件", "6290": "電子零組件", "6414": "工業電腦", "6425": "其他", "6432": "光電", "6442": "光電", "6451": "半導體", "6469": "藥局", "6472": "生技醫療", "6477": "其他電子", "6509": "化學", "6510": "半導體設備", "6515": "半導體設備", "6533": "半導體", "6538": "機械", "6546": "其他電子", "6547": "生技", "6552": "其他電子", "6576": "生技", "6584": "其他", "6585": "化學", "6591": "其他電子", "6616": "其他", "6624": "其他", "6629": "其他", "6641": "其他", "6645": "生技", "6664": "其他電子", "6670": "機械", "6672": "電子零組件", "6680": "其他電子", "6706": "其他電子", "6715": "電子零組件", "6753": "造船", "6768": "其他", "6771": "環保", "6796": "生技醫療", "6804": "其他電子", "6806": "再生能源", "6821": "其他電子", "6823": "其他電子", "6830": "半導體設備", "6835": "其他", "6840": "其他電子", "6843": "其他電子", "6846": "再生能源", "6854": "光電", "6862": "其他", "6863": "其他", "6870": "其他電子", "6873": "再生能源", "6874": "其他電子", "6890": "其他", "6894": "其他電子", "6904": "其他電子", "6913": "其他電子", "6957": "其他", "6982": "機械", "7402": "電子零組件", "7556": "其他", "7713": "生技", "8021": "電子零組件", "8027": "半導體", "8028": "半導體", "8042": "電源供應", "8050": "工業電腦", "8087": "再生能源", "8091": "其他電子", "8092": "其他電子", "8104": "光電", "8112": "電子通路", "8147": "其他電子", "8155": "其他電子", "8171": "其他電子", "8210": "伺服器", "8255": "電子零組件", "8299": "半導體", "8374": "電子通路", "8404": "紡織", "8411": "其他", "8422": "環保", "8431": "其他電子", "8433": "其他電子", "8442": "其他", "8462": "健身", "8466": "其他", "8467": "運動休閒", "8473": "環保", "8478": "遊艇", "8488": "其他", "8927": "食品", "8996": "機械", "9802": "紡織", "9906": "其他", "9933": "工程", "9935": "其他", "9939": "包材", "9941": "租賃", "9958": "再生能源"};
+
+let CBD=[], INST=[];
+let vSk='cbth', vSd=1, vPg=1, iSk='三大法人合計買賣超', iSd=-1, iPg=1;
+let vLoaded=false, iLoaded=false;
+
+// ── 產業下拉 ──
+(function(){
+  const s=document.getElementById('vsi');
+  [...new Set(Object.values(INDUSTRY))].sort().forEach(i=>{
+    const o=document.createElement('option');o.value=i;o.textContent=i;s.appendChild(o);
+  });
+})();
+
+// ── Tab 切換 ──
+function showTab(t){
+  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',(i===0&&t==='v')||(i===1&&t==='i')));
+  document.getElementById('pv').classList.toggle('active',t==='v');
+  document.getElementById('pi').classList.toggle('active',t==='i');
+  if(t==='i'&&!iLoaded) loadInst();
+}
+
+// ── 載入估值 JSON ──
+function loadVal(){
+  fetch('cb_tracker_latest.json?_='+Date.now())
+    .then(r=>{if(!r.ok)throw 0;return r.json();})
+    .then(d=>{
+      CBD = d.data || [];
+      vLoaded = true;
+      document.getElementById('vloading').style.display='none';
+      document.getElementById('hdate').textContent='估值：'+(d.date||d.updated||'')+'｜法人：載入中...';
+      rv();
+    })
+    .catch(()=>{
+      document.getElementById('vloading').textContent='估值資料載入失敗';
+    });
+}
+
+// ── 載入法人 JSON ──
+function loadInst(){
+  document.getElementById('iloading').style.display='block';
+  fetch('cb_inst_latest.json?_='+Date.now())
+    .then(r=>{if(!r.ok)throw 0;return r.json();})
+    .then(d=>{
+      INST=d.data||[];
+      iLoaded=true;
+      document.getElementById('iloading').style.display='none';
+      // 更新 header 日期
+      const vdate = document.getElementById('hdate').textContent.split('｜')[0];
+      document.getElementById('hdate').textContent=vdate+'｜法人：'+(d.date||'');
+      ri();
+    })
+    .catch(()=>{
+      document.getElementById('iloading').style.display='none';
+      document.getElementById('ind').style.display='block';
+    });
+}
+
+// ════ 估值 Tab ════
+function gvf(){
+  const q=document.getElementById('vsq').value.toLowerCase();
+  const ind=document.getElementById('vsi').value;
+  const tier=document.getElementById('vst').value;
+  return CBD.filter(d=>{
+    if(q&&!d.name.includes(q)&&!d.cb.includes(q)&&!d.stk.includes(q))return false;
+    if(ind&&d.ind!==ind)return false;
+    if(tier==='cheap'&&!(d.cbth!==null&&d.cbth<100))return false;
+    if(tier==='fair'&&!(d.cbth!==null&&d.cbth>=100&&d.cbth<=120))return false;
+    if(tier==='prem'&&!(d.cbth!==null&&d.cbth>120))return false;
+    return true;
+  });
+}
+function sv(k){if(vSk===k)vSd*=-1;else{vSk=k;vSd=1;}vPg=1;rv();}
+function vgo(d){vPg+=d;rv();}
+function rv(){
+  if(!vLoaded)return;
+  const rows=gvf().sort((a,b)=>{
+    const av=a[vSk],bv=b[vSk];
+    if(av===null&&bv===null)return 0;if(av===null)return 1;if(bv===null)return-1;
+    return vSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const ps=parseInt(document.getElementById('vps').value);
+  const tp=Math.max(1,Math.ceil(rows.length/ps));
+  if(vPg>tp)vPg=1;
+  const sl=rows.slice((vPg-1)*ps,vPg*ps);
+
+  const wv=CBD.filter(d=>d.cbth!==null);
+  const cheap=wv.filter(d=>d.cbth<100).length,fair=wv.filter(d=>d.cbth>=100&&d.cbth<=120).length,prem=wv.filter(d=>d.cbth>120).length;
+  document.getElementById('vs').innerHTML=`
+    <div class="stat"><div class="stat-l">篩選結果</div><div class="stat-v blue">${rows.length}</div></div>
+    <div class="stat"><div class="stat-l">便宜 &lt;100%</div><div class="stat-v green">${cheap}</div></div>
+    <div class="stat"><div class="stat-l">合理 100-120%</div><div class="stat-v blue">${fair}</div></div>
+    <div class="stat"><div class="stat-l">溢價 &gt;120%</div><div class="stat-v orange">${prem}</div></div>`;
+  document.getElementById('vc').textContent=`共 ${rows.length} 筆`;
+
+  const f=(v,d=2)=>v===null||v===undefined||isNaN(v)?'<span class="na">—</span>':Number(v).toFixed(d);
+  const vb=v=>{
+    if(v===null||v===undefined)return'<span class="na">—</span>';
+    if(v<100)return`<span class="badge cheap">${Number(v).toFixed(1)}%</span>`;
+    if(v<=120)return`<span class="badge fair">${Number(v).toFixed(1)}%</span>`;
+    return`<span class="badge prem">${Number(v).toFixed(1)}%</span>`;
+  };
+  document.getElementById('vb').innerHTML=sl.map(d=>{const isChk=userMeta[d.cb]?.checked||false;const noteVal=(userMeta[d.cb]?.note||'').replace(/"/g,'&quot;');return`<tr class="${isChk?'row-checked':''}">
+    <td style="text-align:center"><input type="checkbox" ${isChk?'checked':''} onchange="setMeta('${d.cb}','checked',this.checked);rv()"></td>
+    <td class="left mono">${d.cb}</td><td class="left mono">${d.stk}</td>
+    <td class="left">${d.name}</td><td class="left" style="color:#888;font-size:11px">${d.ind||'—'}</td>
+    <td>${f(d.conv)}</td><td>${f(d.sp)}</td><td>${f(d.cbp)}</td>
+    <td>${f(d.th)}</td><td>${vb(d.cbth)}</td>
+    <td>${d.stk2!==null&&d.stk2!==undefined?f(d.stk2,1)+'%':'<span class="na">—</span>'}</td>
+    <td><input class="note-in" type="text" value="${noteVal}" placeholder="備註…" onchange="setMeta('${d.cb}','note',this.value)"></td>
+  </tr>`}).join('');
+
+  document.getElementById('vpi').textContent=`第 ${vPg} / ${tp} 頁`;
+  document.getElementById('vpp').disabled=vPg<=1;
+  document.getElementById('vpn').disabled=vPg>=tp;
+  document.querySelectorAll('#pv th').forEach(th=>{
+    const m=th.getAttribute('onclick')?.match(/'(\w+)'/);
+    const k=m?m[1]:null;
+    th.classList.toggle('sk',k===vSk);
+    const arr=th.querySelector('.arr');
+    if(arr)arr.textContent=k===vSk?(vSd>0?'↑':'↓'):'↕';
+  });
+}
+
+// ════ 法人 Tab ════
+function gif(){
+  const q=document.getElementById('isq').value.toLowerCase();
+  const tier=document.getElementById('ist').value;
+  const sk=document.getElementById('isw').value;
+  return INST.filter(d=>{
+    if(q&&!d['CB名稱'].includes(q)&&!d['CB代號'].includes(q))return false;
+    const v=d[sk]||0;
+    if(tier==='buy'&&v<=0)return false;
+    if(tier==='sell'&&v>=0)return false;
+    return true;
+  });
+}
+function si(k){if(iSk===k)iSd*=-1;else{iSk=k;iSd=-1;}iPg=1;ri();}
+function igo(d){iPg+=d;ri();}
+function ri(){
+  if(!iLoaded)return;
+  document.getElementById('ind').style.display='none';
+  const rows=gif().sort((a,b)=>{
+    const av=a[iSk]||0,bv=b[iSk]||0;
+    return iSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const ps=parseInt(document.getElementById('ips').value);
+  const tp=Math.max(1,Math.ceil(rows.length/ps));
+  if(iPg>tp)iPg=1;
+  const sl=rows.slice((iPg-1)*ps,iPg*ps);
+  const mx=Math.max(1,...INST.map(d=>Math.abs(d['三大法人合計買賣超']||0)));
+  const buy=INST.filter(d=>(d['三大法人合計買賣超']||0)>0).length;
+  const sell=INST.filter(d=>(d['三大法人合計買賣超']||0)<0).length;
+  document.getElementById('is').innerHTML=`
+    <div class="stat"><div class="stat-l">資料日期</div><div class="stat-v blue" style="font-size:14px">${INST[0]?.['日期']||''}</div></div>
+    <div class="stat"><div class="stat-l">有交易CB</div><div class="stat-v blue">${INST.length}</div></div>
+    <div class="stat"><div class="stat-l">↑ 買超</div><div class="stat-v green">${buy}</div></div>
+    <div class="stat"><div class="stat-l">↓ 賣超</div><div class="stat-v red">${sell}</div></div>`;
+  document.getElementById('ic').textContent=`共 ${rows.length} 筆`;
+
+  const bar=v=>{
+    const w=Math.round(Math.abs(v)/mx*50);
+    const c=v>0?'p':v<0?'n':'';
+    const vc=v>0?'p':v<0?'n':'z';
+    return`<div class="bar-wrap"><div class="bar ${c}" style="width:${w}px"></div><span class="bv ${vc}">${v>0?'+':''}${v}</span></div>`;
+  };
+  const dir=v=>v>0?'<span class="badge buy">↑買超</span>':v<0?'<span class="badge sell">↓賣超</span>':'<span class="badge flat">持平</span>';
+
+  document.getElementById('ib').innerHTML=sl.map(d=>`<tr>
+    <td class="left mono">${d['CB代號']}</td>
+    <td class="left">${d['CB名稱']}</td>
+    <td>${bar(d['外資_買賣超']||0)}</td>
+    <td>${bar(d['投信_買賣超']||0)}</td>
+    <td>${bar(d['自營_買賣超']||0)}</td>
+    <td>${bar(d['三大法人合計買賣超']||0)}</td>
+    <td>${dir(d['三大法人合計買賣超']||0)}</td>
+  </tr>`).join('');
+
+  document.getElementById('ipi').textContent=`第 ${iPg} / ${tp} 頁`;
+  document.getElementById('ipp').disabled=iPg<=1;
+  document.getElementById('ipn').disabled=iPg>=tp;
+  document.querySelectorAll('#pi th').forEach(th=>{
+    const m=th.getAttribute('onclick')?.match(/'([^']+)'/);
+    const k=m?m[1]:null;
+    th.classList.toggle('sk',k===iSk);
+    const arr=th.querySelector('.arr');
+    if(arr)arr.textContent=k===iSk?(iSd>0?'↑':'↓'):'↕';
+  });
+}
+
+
+// ── 匯出 Excel ──
+function exportVal(){
+  const rows = gvf().sort((a,b)=>{
+    const av=a[vSk],bv=b[vSk];
+    if(av===null&&bv===null)return 0;if(av===null)return 1;if(bv===null)return-1;
+    return vSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const data = [['CB代號','股票','名稱','產業','轉換價','股票現價','CB現價','理論價','CB/理論%','股/轉換%']];
+  rows.forEach(d=>{
+    data.push([
+      d.cb, d.stk, d.name, d.ind||'—',
+      d.conv??'', d.sp??'', d.cbp??'', d.th??'',
+      d.cbth??'', d.stk2??''
+    ]);
+  });
+  const ws = XLSX.utils.aoa_to_sheet(data);
+  ws['!cols'] = [{wch:10},{wch:8},{wch:16},{wch:10},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:10}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'CB估值');
+  XLSX.writeFile(wb, 'cb_valuation_'+new Date().toISOString().slice(0,10)+'.xlsx');
+}
+
+function exportInst(){
+  const rows = gif().sort((a,b)=>{
+    const av=a[iSk]||0,bv=b[iSk]||0;
+    return iSd*(typeof av==='string'?av.localeCompare(bv):av-bv);
+  });
+  const data = [['CB代號','CB名稱','外資買張','外資賣張','外資買賣超','投信買張','投信賣張','投信買賣超','自營買張','自營賣張','自營買賣超','三大法人合計買賣超','買超方向']];
+  rows.forEach(d=>{
+    data.push([
+      d['CB代號'], d['CB名稱'],
+      d['外資_買張']||0, d['外資_賣張']||0, d['外資_買賣超']||0,
+      d['投信_買張']||0, d['投信_賣張']||0, d['投信_買賣超']||0,
+      d['自營_買張']||0, d['自營_賣張']||0, d['自營_買賣超']||0,
+      d['三大法人合計買賣超']||0,
+      (d['三大法人合計買賣超']||0)>0?'買超':(d['三大法人合計買賣超']||0)<0?'賣超':'持平'
+    ]);
+  });
+  const ws = XLSX.utils.aoa_to_sheet(data);
+  ws['!cols'] = [{wch:10},{wch:16},{wch:8},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:8},{wch:8},{wch:10},{wch:12},{wch:8}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '三大法人買賣超');
+  const date = (INST[0]?.['日期']||'').replace(/\//g,'-');
+  XLSX.writeFile(wb, 'cb_inst_'+date+'.xlsx');
+}
+
+// 啟動
+loadVal();
+</script>
+</body>
+</html>
