@@ -1,0 +1,41 @@
+name: 每日CB估值更新
+
+on:
+  schedule:
+    # 台灣時間下午4點 = UTC 08:00，週一到週五
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  fetch-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝套件
+        run: pip install requests pandas openpyxl gspread google-auth
+
+      - name: 設定 Google 憑證
+        run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > credentials.json
+
+      - name: 抓CB估值 + 更新 Google Sheets
+        run: python fetch_prices.py
+
+      - name: 抓三大法人買賣超
+        run: python cb_inst_trading.py
+
+      - name: 推到 GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cb_tracker_latest.json prices.json cb_inst_latest.json || true
+          git stash || true
+          git pull --rebase origin main || true
+          git stash pop || true
+          git add cb_tracker_latest.json prices.json cb_inst_latest.json || true
+          git diff --staged --quiet || git commit -m "CB每日更新 $(date +'%Y/%m/%d %H:%M') UTC+8"
+          git push
