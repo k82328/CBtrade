@@ -1,6 +1,6 @@
 {
-  "updated": "2026/06/03 12:33",
-  "date": "2026/06/03",
+  "updated": "2026/06/04 10:54",
+  "date": "2026/06/04",
   "data": [
     {
       "cb": "11011",
@@ -8,11 +8,11 @@
       "name": "台泥一永",
       "ind": "水泥",
       "conv": 35.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.1,
+      "sp": 24.45,
+      "th": 69.46,
+      "cbth": 144.11,
+      "stk2": 69.46
     },
     {
       "cb": "12561",
@@ -20,11 +20,11 @@
       "name": "鮮活果汁一KY",
       "ind": "食品",
       "conv": 189.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 106.3,
+      "sp": 200.0,
+      "th": 105.76,
+      "cbth": 100.51,
+      "stk2": 105.76
     },
     {
       "cb": "13166",
@@ -32,11 +32,11 @@
       "name": "上曜六",
       "ind": "化學",
       "conv": 17.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.3,
+      "sp": 10.65,
+      "th": 61.21,
+      "cbth": 167.13,
+      "stk2": 61.21
     },
     {
       "cb": "13382",
@@ -44,11 +44,11 @@
       "name": "廣華二KY",
       "ind": "化學",
       "conv": 37.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.0,
+      "sp": 17.1,
+      "th": 45.48,
+      "cbth": 219.88,
+      "stk2": 45.48
     },
     {
       "cb": "140201",
@@ -56,11 +56,11 @@
       "name": "遠東新E1永",
       "ind": "紡織",
       "conv": 43.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.75,
+      "sp": 27.55,
+      "th": 63.92,
+      "cbth": 160.75,
+      "stk2": 63.92
     },
     {
       "cb": "140202",
@@ -68,11 +68,11 @@
       "name": "遠東新E2永",
       "ind": "紡織",
       "conv": 31.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.9,
+      "sp": 27.55,
+      "th": 86.91,
+      "cbth": 113.8,
+      "stk2": 86.91
     },
     {
       "cb": "14363",
@@ -80,11 +80,11 @@
       "name": "華友聯三",
       "ind": "紡織",
       "conv": 128.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.95,
+      "sp": 46.4,
+      "th": 36.05,
+      "cbth": 280.03,
+      "stk2": 36.05
     },
     {
       "cb": "14364",
@@ -92,11 +92,11 @@
       "name": "華友聯四",
       "ind": "紡織",
       "conv": 99.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.55,
+      "sp": 46.4,
+      "th": 46.87,
+      "cbth": 201.73,
+      "stk2": 46.87
     },
     {
       "cb": "14381",
@@ -104,11 +104,11 @@
       "name": "三地開發一",
       "ind": "紡織",
       "conv": 55.88,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 119.7,
+      "sp": 20.3,
+      "th": 36.33,
+      "cbth": 329.48,
+      "stk2": 36.33
     },
     {
       "cb": "14664",
@@ -116,11 +116,11 @@
       "name": "聚隆四",
       "ind": "紡織",
       "conv": 18.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 106.0,
+      "sp": 14.4,
+      "th": 76.6,
+      "cbth": 138.38,
+      "stk2": 76.6
     },
     {
       "cb": "14722",
@@ -128,11 +128,11 @@
       "name": "三洋實業二",
       "ind": "紡織",
       "conv": 98.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.8,
+      "sp": 91.0,
+      "th": 92.29,
+      "cbth": 116.81,
+      "stk2": 92.29
     },
     {
       "cb": "14723",
@@ -140,11 +140,11 @@
       "name": "三洋實業三",
       "ind": "紡織",
       "conv": 101.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.6,
+      "sp": 91.0,
+      "th": 89.66,
+      "cbth": 108.86,
+      "stk2": 89.66
     },
     {
       "cb": "14743",
@@ -152,11 +152,11 @@
       "name": "弘裕三",
       "ind": "紡織",
       "conv": 14.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 89.2,
+      "sp": 10.4,
+      "th": 74.29,
+      "cbth": 120.07,
+      "stk2": 74.29
     },
     {
       "cb": "15142",
@@ -164,11 +164,11 @@
       "name": "亞力二",
       "ind": "電機",
       "conv": 109.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 150.0,
+      "sp": 149.5,
+      "th": 136.9,
+      "cbth": 109.57,
+      "stk2": 136.9
     },
     {
       "cb": "15261",
@@ -176,11 +176,11 @@
       "name": "日馳一",
       "ind": "汽車",
       "conv": 37.29,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.7,
+      "sp": 15.4,
+      "th": 41.3,
+      "cbth": 236.56,
+      "stk2": 41.3
     },
     {
       "cb": "15364",
@@ -188,11 +188,11 @@
       "name": "和大四",
       "ind": "汽車",
       "conv": 71.47,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.8,
+      "sp": 51.0,
+      "th": 71.36,
+      "cbth": 137.05,
+      "stk2": 71.36
     },
     {
       "cb": "15601",
@@ -200,11 +200,11 @@
       "name": "中砂一",
       "ind": "機械",
       "conv": 284.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 252.0,
+      "sp": 716.0,
+      "th": 251.58,
+      "cbth": 100.17,
+      "stk2": 251.58
     },
     {
       "cb": "15864",
@@ -212,11 +212,11 @@
       "name": "和勤四",
       "ind": "塑膠",
       "conv": 30.74,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 21.6,
+      "th": 70.27,
+      "cbth": 145.15,
+      "stk2": 70.27
     },
     {
       "cb": "15865",
@@ -224,11 +224,11 @@
       "name": "和勤五",
       "ind": "塑膠",
       "conv": 30.14,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.4,
+      "sp": 21.6,
+      "th": 71.67,
+      "cbth": 138.69,
+      "stk2": 71.67
     },
     {
       "cb": "15894",
@@ -248,11 +248,11 @@
       "name": "川寶二",
       "ind": "其他",
       "conv": 37.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 200.0,
+      "sp": 77.0,
+      "th": 204.24,
+      "cbth": 97.92,
+      "stk2": 204.24
     },
     {
       "cb": "15984",
@@ -260,11 +260,11 @@
       "name": "岱宇四",
       "ind": "運動休閒",
       "conv": 32.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.5,
+      "sp": 20.85,
+      "th": 63.76,
+      "cbth": 148.21,
+      "stk2": 63.76
     },
     {
       "cb": "16095",
@@ -272,11 +272,11 @@
       "name": "大亞五",
       "ind": "電線電纜",
       "conv": 51.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.0,
+      "sp": 43.0,
+      "th": 83.82,
+      "cbth": 127.65,
+      "stk2": 83.82
     },
     {
       "cb": "17813",
@@ -284,11 +284,11 @@
       "name": "合世三",
       "ind": "—",
       "conv": 18.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.5,
+      "sp": 12.0,
+      "th": 66.67,
+      "cbth": 152.24,
+      "stk2": 66.67
     },
     {
       "cb": "17863",
@@ -296,11 +296,11 @@
       "name": "科妍三",
       "ind": "生技醫療",
       "conv": 116.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.6,
+      "sp": 54.9,
+      "th": 47.12,
+      "cbth": 215.62,
+      "stk2": 47.12
     },
     {
       "cb": "19094",
@@ -308,11 +308,11 @@
       "name": "榮成四",
       "ind": "造紙",
       "conv": 23.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.0,
+      "sp": 9.93,
+      "th": 41.55,
+      "cbth": 233.45,
+      "stk2": 41.55
     },
     {
       "cb": "20344",
@@ -320,11 +320,11 @@
       "name": "允強四",
       "ind": "鋼鐵",
       "conv": 24.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.0,
+      "sp": 20.3,
+      "th": 84.58,
+      "cbth": 126.51,
+      "stk2": 84.58
     },
     {
       "cb": "20662",
@@ -332,11 +332,11 @@
       "name": "世德二",
       "ind": "鋼鐵",
       "conv": 88.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.8,
+      "sp": 58.8,
+      "th": 66.74,
+      "cbth": 149.54,
+      "stk2": 66.74
     },
     {
       "cb": "21043",
@@ -344,11 +344,11 @@
       "name": "國際中橡三",
       "ind": "橡膠",
       "conv": 21.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.0,
+      "sp": 11.2,
+      "th": 52.83,
+      "cbth": 187.39,
+      "stk2": 52.83
     },
     {
       "cb": "22013",
@@ -356,11 +356,11 @@
       "name": "裕隆三",
       "ind": "汽車",
       "conv": 75.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.85,
+      "sp": 28.8,
+      "th": 38.4,
+      "cbth": 257.42,
+      "stk2": 38.4
     },
     {
       "cb": "22283",
@@ -368,11 +368,11 @@
       "name": "劍麟三",
       "ind": "汽車零件",
       "conv": 85.36,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.95,
+      "sp": 85.5,
+      "th": 100.16,
+      "cbth": 115.76,
+      "stk2": 100.16
     },
     {
       "cb": "22331",
@@ -380,11 +380,11 @@
       "name": "宇隆一",
       "ind": "汽車零件",
       "conv": 250.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 150.0,
+      "sp": 316.5,
+      "th": 126.6,
+      "cbth": 118.48,
+      "stk2": 126.6
     },
     {
       "cb": "22363",
@@ -392,11 +392,11 @@
       "name": "百達三KY",
       "ind": "汽車零件",
       "conv": 118.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 118.05,
+      "sp": 136.0,
+      "th": 115.16,
+      "cbth": 102.51,
+      "stk2": 115.16
     },
     {
       "cb": "22471",
@@ -404,11 +404,11 @@
       "name": "汎德永業一",
       "ind": "汽車",
       "conv": 282.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.7,
+      "sp": 234.5,
+      "th": 82.92,
+      "cbth": 125.06,
+      "stk2": 82.92
     },
     {
       "cb": "22472",
@@ -416,11 +416,11 @@
       "name": "汎德永業二",
       "ind": "汽車",
       "conv": 273.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 106.3,
+      "sp": 234.5,
+      "th": 85.65,
+      "cbth": 124.11,
+      "stk2": 85.65
     },
     {
       "cb": "23291",
@@ -428,11 +428,11 @@
       "name": "華泰一",
       "ind": "半導體",
       "conv": 51.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 125.85,
+      "sp": 58.0,
+      "th": 113.06,
+      "cbth": 111.31,
+      "stk2": 113.06
     },
     {
       "cb": "23372",
@@ -440,11 +440,11 @@
       "name": "旺宏二",
       "ind": "半導體",
       "conv": 23.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 709.0,
+      "sp": 156.5,
+      "th": 680.43,
+      "cbth": 104.2,
+      "stk2": 680.43
     },
     {
       "cb": "23383",
@@ -452,11 +452,11 @@
       "name": "光罩三",
       "ind": "半導體",
       "conv": 73.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.45,
+      "sp": 52.7,
+      "th": 71.7,
+      "cbth": 138.7,
+      "stk2": 71.7
     },
     {
       "cb": "23511",
@@ -464,11 +464,11 @@
       "name": "順德一",
       "ind": "電子零組件",
       "conv": 72.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 290.0,
+      "sp": 211.0,
+      "th": 291.44,
+      "cbth": 99.51,
+      "stk2": 291.44
     },
     {
       "cb": "23683",
@@ -476,11 +476,11 @@
       "name": "金像電三",
       "ind": "半導體",
       "conv": 450.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 293.0,
+      "sp": 1350.0,
+      "th": 300.0,
+      "cbth": 97.67,
+      "stk2": 300.0
     },
     {
       "cb": "23742",
@@ -488,11 +488,11 @@
       "name": "佳能二",
       "ind": "電腦周邊",
       "conv": 86.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 131.0,
+      "sp": 80.9,
+      "th": 93.74,
+      "cbth": 139.75,
+      "stk2": 93.74
     },
     {
       "cb": "24023",
@@ -500,11 +500,11 @@
       "name": "毅嘉三",
       "ind": "電子零組件",
       "conv": 55.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 139.25,
+      "sp": 69.3,
+      "th": 126.0,
+      "cbth": 110.52,
+      "stk2": 126.0
     },
     {
       "cb": "24271",
@@ -512,11 +512,11 @@
       "name": "三商電一",
       "ind": "電子通路",
       "conv": 26.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.95,
+      "sp": 23.5,
+      "th": 89.35,
+      "cbth": 110.74,
+      "stk2": 89.35
     },
     {
       "cb": "24361",
@@ -524,11 +524,11 @@
       "name": "偉詮電一",
       "ind": "半導體",
       "conv": 53.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 137.3,
+      "sp": 71.8,
+      "th": 134.71,
+      "cbth": 101.92,
+      "stk2": 134.71
     },
     {
       "cb": "24394",
@@ -536,11 +536,11 @@
       "name": "美律四",
       "ind": "電子零組件",
       "conv": 128.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 108.95,
+      "sp": 92.6,
+      "th": 71.84,
+      "cbth": 151.66,
+      "stk2": 71.84
     },
     {
       "cb": "24395",
@@ -548,11 +548,11 @@
       "name": "美律五",
       "ind": "電子零組件",
       "conv": 125.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 109.6,
+      "sp": 92.6,
+      "th": 73.96,
+      "cbth": 148.19,
+      "stk2": 73.96
     },
     {
       "cb": "24423",
@@ -560,11 +560,11 @@
       "name": "新美齊三",
       "ind": "電子零組件",
       "conv": 25.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.5,
+      "sp": 19.6,
+      "th": 78.09,
+      "cbth": 124.86,
+      "stk2": 78.09
     },
     {
       "cb": "24424",
@@ -572,11 +572,11 @@
       "name": "新美齊四",
       "ind": "電子零組件",
       "conv": 25.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.0,
+      "sp": 19.6,
+      "th": 77.47,
+      "cbth": 125.21,
+      "stk2": 77.47
     },
     {
       "cb": "24552",
@@ -584,11 +584,11 @@
       "name": "全新二",
       "ind": "半導體",
       "conv": 162.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 256.0,
+      "sp": 402.0,
+      "th": 246.78,
+      "cbth": 103.74,
+      "stk2": 246.78
     },
     {
       "cb": "24553",
@@ -596,11 +596,11 @@
       "name": "全新三",
       "ind": "半導體",
       "conv": 153.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 278.0,
+      "sp": 402.0,
+      "th": 261.89,
+      "cbth": 106.15,
+      "stk2": 261.89
     },
     {
       "cb": "24624",
@@ -608,11 +608,11 @@
       "name": "良得電四",
       "ind": "電子零組件",
       "conv": 30.09,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.95,
+      "sp": 24.6,
+      "th": 81.75,
+      "cbth": 121.04,
+      "stk2": 81.75
     },
     {
       "cb": "24642",
@@ -620,11 +620,11 @@
       "name": "盟立二",
       "ind": "電子零組件",
       "conv": 78.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 223.0,
+      "sp": 170.0,
+      "th": 216.56,
+      "cbth": 102.97,
+      "stk2": 216.56
     },
     {
       "cb": "24672",
@@ -632,11 +632,11 @@
       "name": "志聖二",
       "ind": "半導體設備",
       "conv": 250.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 252.0,
+      "sp": 626.0,
+      "th": 249.8,
+      "cbth": 100.88,
+      "stk2": 249.8
     },
     {
       "cb": "24673",
@@ -644,11 +644,11 @@
       "name": "志聖三",
       "ind": "半導體設備",
       "conv": 246.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 253.0,
+      "sp": 626.0,
+      "th": 253.85,
+      "cbth": 99.67,
+      "stk2": 253.85
     },
     {
       "cb": "24762",
@@ -656,11 +656,11 @@
       "name": "鉅祥二",
       "ind": "電子零組件",
       "conv": 66.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 184.0,
+      "sp": 121.0,
+      "th": 181.95,
+      "cbth": 101.13,
+      "stk2": 181.95
     },
     {
       "cb": "24866",
@@ -668,11 +668,11 @@
       "name": "一詮六",
       "ind": "電子零組件",
       "conv": 125.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 222.0,
+      "sp": 274.5,
+      "th": 219.25,
+      "cbth": 101.25,
+      "stk2": 219.25
     },
     {
       "cb": "25283",
@@ -680,11 +680,11 @@
       "name": "皇普三",
       "ind": "建設",
       "conv": 40.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 21.25,
+      "th": 52.99,
+      "cbth": 196.26,
+      "stk2": 52.99
     },
     {
       "cb": "25284",
@@ -692,11 +692,11 @@
       "name": "皇普四",
       "ind": "建設",
       "conv": 38.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 90.4,
+      "sp": 21.25,
+      "th": 54.91,
+      "cbth": 164.63,
+      "stk2": 54.91
     },
     {
       "cb": "25303",
@@ -704,11 +704,11 @@
       "name": "華建三",
       "ind": "建設",
       "conv": 32.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 92.35,
+      "sp": 19.1,
+      "th": 59.32,
+      "cbth": 155.68,
+      "stk2": 59.32
     },
     {
       "cb": "25304",
@@ -716,11 +716,11 @@
       "name": "華建四",
       "ind": "建設",
       "conv": 30.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 93.3,
+      "sp": 19.1,
+      "th": 63.25,
+      "cbth": 147.51,
+      "stk2": 63.25
     },
     {
       "cb": "25483",
@@ -728,11 +728,11 @@
       "name": "華固三",
       "ind": "建設",
       "conv": 125.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.1,
+      "sp": 99.8,
+      "th": 79.84,
+      "cbth": 126.63,
+      "stk2": 79.84
     },
     {
       "cb": "25484",
@@ -740,11 +740,11 @@
       "name": "華固四",
       "ind": "建設",
       "conv": 123.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 99.8,
+      "th": 80.81,
+      "cbth": 126.22,
+      "stk2": 80.81
     },
     {
       "cb": "26417",
@@ -752,11 +752,11 @@
       "name": "正德七",
       "ind": "航運",
       "conv": 22.15,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.0,
+      "sp": 19.9,
+      "th": 89.84,
+      "cbth": 109.08,
+      "stk2": 89.84
     },
     {
       "cb": "26418",
@@ -764,11 +764,11 @@
       "name": "正德八",
       "ind": "航運",
       "conv": 19.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 105.8,
+      "sp": 19.9,
+      "th": 103.11,
+      "cbth": 102.61,
+      "stk2": 103.11
     },
     {
       "cb": "27271",
@@ -776,11 +776,11 @@
       "name": "王品一",
       "ind": "餐飲",
       "conv": 233.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.6,
+      "sp": 242.5,
+      "th": 103.9,
+      "cbth": 110.3,
+      "stk2": 103.9
     },
     {
       "cb": "27323",
@@ -788,11 +788,11 @@
       "name": "六角三",
       "ind": "餐飲",
       "conv": 121.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.65,
+      "sp": 64.4,
+      "th": 53.22,
+      "cbth": 189.12,
+      "stk2": 53.22
     },
     {
       "cb": "27324",
@@ -800,11 +800,11 @@
       "name": "六角四",
       "ind": "餐飲",
       "conv": 72.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.05,
+      "sp": 64.4,
+      "th": 89.44,
+      "cbth": 111.86,
+      "stk2": 89.44
     },
     {
       "cb": "27431",
@@ -812,11 +812,11 @@
       "name": "山富一",
       "ind": "觀光",
       "conv": 101.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 70.6,
+      "th": 69.28,
+      "cbth": 147.23,
+      "stk2": 69.28
     },
     {
       "cb": "27451",
@@ -824,11 +824,11 @@
       "name": "五福一",
       "ind": "觀光",
       "conv": 111.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 112.95,
+      "sp": 108.0,
+      "th": 97.04,
+      "cbth": 116.4,
+      "stk2": 97.04
     },
     {
       "cb": "27531",
@@ -836,11 +836,11 @@
       "name": "八方雲集一",
       "ind": "餐飲",
       "conv": 207.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.65,
+      "sp": 182.5,
+      "th": 87.91,
+      "cbth": 122.45,
+      "stk2": 87.91
     },
     {
       "cb": "27532",
@@ -848,11 +848,11 @@
       "name": "八方雲集二",
       "ind": "餐飲",
       "conv": 205.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.05,
+      "sp": 182.5,
+      "th": 88.76,
+      "cbth": 120.61,
+      "stk2": 88.76
     },
     {
       "cb": "27551",
@@ -860,11 +860,11 @@
       "name": "揚秦一",
       "ind": "餐飲",
       "conv": 86.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 155.0,
+      "sp": 137.5,
+      "th": 158.59,
+      "cbth": 97.74,
+      "stk2": 158.59
     },
     {
       "cb": "27561",
@@ -872,11 +872,11 @@
       "name": "聯發國際一",
       "ind": "餐飲",
       "conv": 87.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.9,
+      "sp": 60.2,
+      "th": 68.64,
+      "cbth": 147.0,
+      "stk2": 68.64
     },
     {
       "cb": "29061",
@@ -884,11 +884,11 @@
       "name": "高林一",
       "ind": "百貨",
       "conv": 16.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.95,
+      "sp": 12.7,
+      "th": 75.6,
+      "cbth": 130.89,
+      "stk2": 75.6
     },
     {
       "cb": "30112",
@@ -896,11 +896,11 @@
       "name": "今皓二",
       "ind": "其他電子",
       "conv": 12.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 129.0,
+      "sp": 15.2,
+      "th": 121.6,
+      "cbth": 106.09,
+      "stk2": 121.6
     },
     {
       "cb": "30134",
@@ -908,11 +908,11 @@
       "name": "晟銘電四",
       "ind": "其他電子",
       "conv": 143.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 136.2,
+      "sp": 129.5,
+      "th": 90.06,
+      "cbth": 151.23,
+      "stk2": 90.06
     },
     {
       "cb": "30165",
@@ -920,11 +920,11 @@
       "name": "嘉晶五",
       "ind": "半導體",
       "conv": 71.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 160.0,
+      "sp": 110.5,
+      "th": 154.76,
+      "cbth": 103.39,
+      "stk2": 154.76
     },
     {
       "cb": "30321",
@@ -932,11 +932,11 @@
       "name": "偉訓一",
       "ind": "電子通路",
       "conv": 105.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 90.0,
+      "th": 84.99,
+      "cbth": 120.01,
+      "stk2": 84.99
     },
     {
       "cb": "30322",
@@ -944,11 +944,11 @@
       "name": "偉訓二",
       "ind": "電子通路",
       "conv": 101.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.0,
+      "sp": 90.0,
+      "th": 88.32,
+      "cbth": 116.62,
+      "stk2": 88.32
     },
     {
       "cb": "30336",
@@ -956,11 +956,11 @@
       "name": "威健六",
       "ind": "電子通路",
       "conv": 24.84,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 200.0,
+      "sp": 50.0,
+      "th": 201.29,
+      "cbth": 99.36,
+      "stk2": 201.29
     },
     {
       "cb": "30337",
@@ -968,11 +968,11 @@
       "name": "威健七",
       "ind": "電子通路",
       "conv": 34.44,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 146.4,
+      "sp": 50.0,
+      "th": 145.18,
+      "cbth": 100.84,
+      "stk2": 145.18
     },
     {
       "cb": "30371",
@@ -980,11 +980,11 @@
       "name": "欣興一",
       "ind": "PCB",
       "conv": 164.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 608.0,
+      "sp": 971.0,
+      "th": 591.71,
+      "cbth": 102.75,
+      "stk2": 591.71
     },
     {
       "cb": "30401",
@@ -992,11 +992,11 @@
       "name": "遠見一",
       "ind": "其他電子",
       "conv": 47.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 39.15,
+      "th": 82.94,
+      "cbth": 125.39,
+      "stk2": 82.94
     },
     {
       "cb": "30454",
@@ -1004,11 +1004,11 @@
       "name": "台灣大四",
       "ind": "電信",
       "conv": 118.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.65,
+      "sp": 116.0,
+      "th": 98.14,
+      "cbth": 103.58,
+      "stk2": 98.14
     },
     {
       "cb": "30455",
@@ -1016,11 +1016,11 @@
       "name": "台灣大五",
       "ind": "電信",
       "conv": 111.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 106.8,
+      "sp": 116.0,
+      "th": 104.22,
+      "cbth": 102.48,
+      "stk2": 104.22
     },
     {
       "cb": "30882",
@@ -1028,11 +1028,11 @@
       "name": "艾訊二",
       "ind": "其他電子",
       "conv": 88.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 158.0,
+      "sp": 139.0,
+      "th": 157.06,
+      "cbth": 100.6,
+      "stk2": 157.06
     },
     {
       "cb": "30922",
@@ -1040,11 +1040,11 @@
       "name": "鴻碩二",
       "ind": "電子零組件",
       "conv": 36.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.6,
+      "sp": 30.85,
+      "th": 85.69,
+      "cbth": 116.23,
+      "stk2": 85.69
     },
     {
       "cb": "30954",
@@ -1052,11 +1052,11 @@
       "name": "及成四",
       "ind": "其他電子",
       "conv": 39.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 127.35,
+      "sp": 43.2,
+      "th": 109.37,
+      "cbth": 116.44,
+      "stk2": 109.37
     },
     {
       "cb": "31222",
@@ -1064,11 +1064,11 @@
       "name": "笙泉二",
       "ind": "半導體",
       "conv": 42.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.0,
+      "sp": 31.15,
+      "th": 73.64,
+      "cbth": 145.3,
+      "stk2": 73.64
     },
     {
       "cb": "31282",
@@ -1076,11 +1076,11 @@
       "name": "昇銳二",
       "ind": "其他電子",
       "conv": 37.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.8,
+      "sp": 25.4,
+      "th": 67.2,
+      "cbth": 148.51,
+      "stk2": 67.2
     },
     {
       "cb": "31311",
@@ -1088,11 +1088,11 @@
       "name": "弘塑一",
       "ind": "半導體設備",
       "conv": 1736.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 189.0,
+      "sp": 3210.0,
+      "th": 184.85,
+      "cbth": 102.25,
+      "stk2": 184.85
     },
     {
       "cb": "31312",
@@ -1100,11 +1100,11 @@
       "name": "弘塑二",
       "ind": "半導體設備",
       "conv": 1626.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 202.0,
+      "sp": 3210.0,
+      "th": 197.34,
+      "cbth": 102.36,
+      "stk2": 197.34
     },
     {
       "cb": "31351",
@@ -1112,11 +1112,11 @@
       "name": "凌航一",
       "ind": "半導體",
       "conv": 50.85,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 478.0,
+      "sp": 240.5,
+      "th": 472.96,
+      "cbth": 101.07,
+      "stk2": 472.96
     },
     {
       "cb": "31352",
@@ -1124,11 +1124,11 @@
       "name": "凌航二",
       "ind": "半導體",
       "conv": 129.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 173.0,
+      "sp": 240.5,
+      "th": 185.14,
+      "cbth": 93.44,
+      "stk2": 185.14
     },
     {
       "cb": "31413",
@@ -1136,11 +1136,11 @@
       "name": "晶宏三",
       "ind": "半導體",
       "conv": 93.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.5,
+      "sp": 75.9,
+      "th": 81.09,
+      "cbth": 125.17,
+      "stk2": 81.09
     },
     {
       "cb": "31672",
@@ -1148,11 +1148,11 @@
       "name": "大量二",
       "ind": "半導體設備",
       "conv": 169.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 520.0,
+      "sp": 901.0,
+      "th": 532.82,
+      "cbth": 97.59,
+      "stk2": 532.82
     },
     {
       "cb": "31882",
@@ -1160,11 +1160,11 @@
       "name": "鑫龍騰二",
       "ind": "其他電子",
       "conv": 28.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.5,
+      "sp": 23.35,
+      "th": 82.22,
+      "cbth": 114.94,
+      "stk2": 82.22
     },
     {
       "cb": "32071",
@@ -1172,11 +1172,11 @@
       "name": "耀勝一",
       "ind": "其他電子",
       "conv": 100.99,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.0,
+      "sp": 68.5,
+      "th": 67.83,
+      "cbth": 147.43,
+      "stk2": 67.83
     },
     {
       "cb": "32571",
@@ -1184,11 +1184,11 @@
       "name": "虹冠電一",
       "ind": "其他電子",
       "conv": 72.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 110.1,
+      "sp": 62.3,
+      "th": 86.29,
+      "cbth": 127.59,
+      "stk2": 86.29
     },
     {
       "cb": "32608",
@@ -1196,11 +1196,11 @@
       "name": "威剛八",
       "ind": "電腦周邊",
       "conv": 228.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 200.0,
+      "sp": 458.0,
+      "th": 200.09,
+      "cbth": 99.96,
+      "stk2": 200.09
     },
     {
       "cb": "32723",
@@ -1208,11 +1208,11 @@
       "name": "東碩三",
       "ind": "其他電子",
       "conv": 34.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 81.05,
+      "sp": 17.2,
+      "th": 50.29,
+      "cbth": 161.17,
+      "stk2": 50.29
     },
     {
       "cb": "32843",
@@ -1220,11 +1220,11 @@
       "name": "太普高三",
       "ind": "其他電子",
       "conv": 23.91,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 95.0,
+      "sp": 19.1,
+      "th": 79.88,
+      "cbth": 118.93,
+      "stk2": 79.88
     },
     {
       "cb": "33035",
@@ -1232,11 +1232,11 @@
       "name": "岱稜五",
       "ind": "光電",
       "conv": 58.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 50.4,
+      "th": 86.01,
+      "cbth": 118.59,
+      "stk2": 86.01
     },
     {
       "cb": "33055",
@@ -1244,11 +1244,11 @@
       "name": "昇貿五",
       "ind": "電子通路",
       "conv": 73.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 210.0,
+      "sp": 160.0,
+      "th": 218.28,
+      "cbth": 96.21,
+      "stk2": 218.28
     },
     {
       "cb": "33121",
@@ -1256,11 +1256,11 @@
       "name": "弘憶股一",
       "ind": "其他電子",
       "conv": 73.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 120.0,
+      "sp": 73.2,
+      "th": 100.0,
+      "cbth": 120.0,
+      "stk2": 100.0
     },
     {
       "cb": "33133",
@@ -1268,11 +1268,11 @@
       "name": "斐成三",
       "ind": "其他電子",
       "conv": 15.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.65,
+      "sp": 11.3,
+      "th": 71.97,
+      "cbth": 145.41,
+      "stk2": 71.97
     },
     {
       "cb": "33225",
@@ -1280,11 +1280,11 @@
       "name": "建舜電五",
       "ind": "其他電子",
       "conv": 22.97,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.0,
+      "sp": 14.55,
+      "th": 63.34,
+      "cbth": 154.72,
+      "stk2": 63.34
     },
     {
       "cb": "33233",
@@ -1293,10 +1293,10 @@
       "ind": "電子零組件",
       "conv": 32.6,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 38.9,
+      "th": 119.33,
       "cbth": null,
-      "stk2": null
+      "stk2": 119.33
     },
     {
       "cb": "33245",
@@ -1304,11 +1304,11 @@
       "name": "雙鴻五",
       "ind": "散熱",
       "conv": 734.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 165.0,
+      "sp": 1185.0,
+      "th": 161.36,
+      "cbth": 102.26,
+      "stk2": 161.36
     },
     {
       "cb": "33246",
@@ -1316,11 +1316,11 @@
       "name": "雙鴻六",
       "ind": "散熱",
       "conv": 1124.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 143.0,
+      "sp": 1185.0,
+      "th": 105.43,
+      "cbth": 135.64,
+      "stk2": 105.43
     },
     {
       "cb": "33247",
@@ -1328,11 +1328,11 @@
       "name": "雙鴻七",
       "ind": "散熱",
       "conv": 1105.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 147.95,
+      "sp": 1185.0,
+      "th": 107.24,
+      "cbth": 137.96,
+      "stk2": 107.24
     },
     {
       "cb": "33466",
@@ -1340,11 +1340,11 @@
       "name": "麗清六",
       "ind": "光電",
       "conv": 36.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.5,
+      "sp": 25.55,
+      "th": 70.0,
+      "cbth": 139.29,
+      "stk2": 70.0
     },
     {
       "cb": "33571",
@@ -1352,11 +1352,11 @@
       "name": "臺慶科一",
       "ind": "其他電子",
       "conv": 107.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 270.0,
+      "sp": 270.5,
+      "th": 251.86,
+      "cbth": 107.2,
+      "stk2": 251.86
     },
     {
       "cb": "33621",
@@ -1364,11 +1364,11 @@
       "name": "先進光一",
       "ind": "光電",
       "conv": 251.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.5,
+      "sp": 144.0,
+      "th": 57.37,
+      "cbth": 199.58,
+      "stk2": 57.37
     },
     {
       "cb": "33763",
@@ -1376,11 +1376,11 @@
       "name": "新日興三",
       "ind": "電子零組件",
       "conv": 195.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 141.95,
+      "sp": 215.5,
+      "th": 110.4,
+      "cbth": 128.58,
+      "stk2": 110.4
     },
     {
       "cb": "33881",
@@ -1388,11 +1388,11 @@
       "name": "崇越電一",
       "ind": "電子通路",
       "conv": 62.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 157.0,
+      "sp": 100.0,
+      "th": 159.24,
+      "cbth": 98.59,
+      "stk2": 159.24
     },
     {
       "cb": "33902",
@@ -1400,11 +1400,11 @@
       "name": "旭軟二",
       "ind": "其他電子",
       "conv": 24.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.0,
+      "sp": 27.7,
+      "th": 114.46,
+      "cbth": 122.31,
+      "stk2": 114.46
     },
     {
       "cb": "34163",
@@ -1412,11 +1412,11 @@
       "name": "融程電三",
       "ind": "其他電子",
       "conv": 127.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 143.0,
+      "sp": 180.0,
+      "th": 141.62,
+      "cbth": 100.97,
+      "stk2": 141.62
     },
     {
       "cb": "34793",
@@ -1424,11 +1424,11 @@
       "name": "安勤三",
       "ind": "其他電子",
       "conv": 109.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 123.95,
+      "sp": 129.0,
+      "th": 118.02,
+      "cbth": 105.02,
+      "stk2": 118.02
     },
     {
       "cb": "34834",
@@ -1436,11 +1436,11 @@
       "name": "力致四",
       "ind": "其他電子",
       "conv": 136.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 107.0,
+      "th": 78.62,
+      "cbth": 146.27,
+      "stk2": 78.62
     },
     {
       "cb": "34843",
@@ -1448,11 +1448,11 @@
       "name": "崧騰三",
       "ind": "其他電子",
       "conv": 42.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 45.0,
+      "th": 106.64,
+      "cbth": 107.84,
+      "stk2": 106.64
     },
     {
       "cb": "35161",
@@ -1460,11 +1460,11 @@
       "name": "亞帝歐一",
       "ind": "其他電子",
       "conv": 25.81,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 116.0,
+      "sp": 23.2,
+      "th": 89.89,
+      "cbth": 129.05,
+      "stk2": 89.89
     },
     {
       "cb": "35181",
@@ -1472,11 +1472,11 @@
       "name": "柏騰一",
       "ind": "其他電子",
       "conv": 34.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 118.0,
+      "sp": 32.05,
+      "th": 91.83,
+      "cbth": 128.5,
+      "stk2": 91.83
     },
     {
       "cb": "35221",
@@ -1484,11 +1484,11 @@
       "name": "御嵿一",
       "ind": "其他電子",
       "conv": 18.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.55,
+      "sp": 11.6,
+      "th": 63.74,
+      "cbth": 157.75,
+      "stk2": 63.74
     },
     {
       "cb": "35265",
@@ -1496,11 +1496,11 @@
       "name": "凡甲五",
       "ind": "電子零組件",
       "conv": 151.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 247.0,
+      "sp": 388.5,
+      "th": 255.76,
+      "cbth": 96.57,
+      "stk2": 255.76
     },
     {
       "cb": "35266",
@@ -1508,11 +1508,11 @@
       "name": "凡甲六",
       "ind": "電子零組件",
       "conv": 188.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 199.0,
+      "sp": 388.5,
+      "th": 205.88,
+      "cbth": 96.66,
+      "stk2": 205.88
     },
     {
       "cb": "35267",
@@ -1520,11 +1520,11 @@
       "name": "凡甲七",
       "ind": "電子零組件",
       "conv": 254.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 152.0,
+      "sp": 388.5,
+      "th": 152.95,
+      "cbth": 99.38,
+      "stk2": 152.95
     },
     {
       "cb": "35431",
@@ -1532,11 +1532,11 @@
       "name": "州巧一",
       "ind": "其他電子",
       "conv": 45.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 119.0,
+      "sp": 35.45,
+      "th": 78.78,
+      "cbth": 151.05,
+      "stk2": 78.78
     },
     {
       "cb": "35482",
@@ -1544,11 +1544,11 @@
       "name": "兆利二",
       "ind": "其他電子",
       "conv": 186.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.6,
+      "sp": 95.4,
+      "th": 51.29,
+      "cbth": 203.94,
+      "stk2": 51.29
     },
     {
       "cb": "35483",
@@ -1556,11 +1556,11 @@
       "name": "兆利三",
       "ind": "其他電子",
       "conv": 162.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.95,
+      "sp": 95.4,
+      "th": 58.6,
+      "cbth": 179.1,
+      "stk2": 58.6
     },
     {
       "cb": "35513",
@@ -1568,11 +1568,11 @@
       "name": "世禾三",
       "ind": "半導體設備",
       "conv": 173.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.7,
+      "sp": 206.0,
+      "th": 119.08,
+      "cbth": 118.16,
+      "stk2": 119.08
     },
     {
       "cb": "35642",
@@ -1580,11 +1580,11 @@
       "name": "其陽二",
       "ind": "其他電子",
       "conv": 83.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 92.5,
+      "sp": 55.0,
+      "th": 65.55,
+      "cbth": 141.11,
+      "stk2": 65.55
     },
     {
       "cb": "35831",
@@ -1592,11 +1592,11 @@
       "name": "辛耘一",
       "ind": "半導體設備",
       "conv": 349.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 246.0,
+      "sp": 872.0,
+      "th": 249.64,
+      "cbth": 98.54,
+      "stk2": 249.64
     },
     {
       "cb": "35832",
@@ -1604,11 +1604,11 @@
       "name": "辛耘二",
       "ind": "半導體設備",
       "conv": 337.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 257.0,
+      "sp": 872.0,
+      "th": 258.45,
+      "cbth": 99.44,
+      "stk2": 258.45
     },
     {
       "cb": "35871",
@@ -1616,11 +1616,11 @@
       "name": "閎康一",
       "ind": "半導體設備",
       "conv": 190.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 129.95,
+      "sp": 311.0,
+      "th": 163.08,
+      "cbth": 79.68,
+      "stk2": 163.08
     },
     {
       "cb": "35872",
@@ -1628,11 +1628,11 @@
       "name": "閎康二",
       "ind": "半導體設備",
       "conv": 196.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 163.0,
+      "sp": 311.0,
+      "th": 158.11,
+      "cbth": 103.09,
+      "stk2": 158.11
     },
     {
       "cb": "35914",
@@ -1640,11 +1640,11 @@
       "name": "艾笛森四",
       "ind": "光電",
       "conv": 24.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 120.0,
+      "sp": 24.6,
+      "th": 100.41,
+      "cbth": 119.51,
+      "stk2": 100.41
     },
     {
       "cb": "36053",
@@ -1652,11 +1652,11 @@
       "name": "宏致三",
       "ind": "電子零組件",
       "conv": 50.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 153.0,
+      "sp": 76.3,
+      "th": 151.09,
+      "cbth": 101.26,
+      "stk2": 151.09
     },
     {
       "cb": "36173",
@@ -1664,11 +1664,11 @@
       "name": "碩天三",
       "ind": "電源供應",
       "conv": 287.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.6,
+      "sp": 221.5,
+      "th": 77.1,
+      "cbth": 149.94,
+      "stk2": 77.1
     },
     {
       "cb": "36804",
@@ -1676,11 +1676,11 @@
       "name": "家登四",
       "ind": "半導體設備",
       "conv": 354.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 153.0,
+      "sp": 537.0,
+      "th": 151.69,
+      "cbth": 100.86,
+      "stk2": 151.69
     },
     {
       "cb": "36805",
@@ -1688,11 +1688,11 @@
       "name": "家登五",
       "ind": "半導體設備",
       "conv": 488.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 148.5,
+      "sp": 537.0,
+      "th": 109.84,
+      "cbth": 135.2,
+      "stk2": 109.84
     },
     {
       "cb": "36841",
@@ -1700,11 +1700,11 @@
       "name": "榮昌一",
       "ind": "生技",
       "conv": 50.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 127.0,
+      "sp": 61.0,
+      "th": 120.32,
+      "cbth": 105.55,
+      "stk2": 120.32
     },
     {
       "cb": "36872",
@@ -1712,11 +1712,11 @@
       "name": "歐買尬二",
       "ind": "電競",
       "conv": 75.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.0,
+      "sp": 71.3,
+      "th": 93.94,
+      "cbth": 104.32,
+      "stk2": 93.94
     },
     {
       "cb": "36873",
@@ -1724,11 +1724,11 @@
       "name": "歐買尬三",
       "ind": "電競",
       "conv": 80.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.45,
+      "sp": 71.3,
+      "th": 89.01,
+      "cbth": 111.73,
+      "stk2": 89.01
     },
     {
       "cb": "36894",
@@ -1736,11 +1736,11 @@
       "name": "湧德四",
       "ind": "—",
       "conv": 61.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 224.0,
+      "sp": 141.0,
+      "th": 228.53,
+      "cbth": 98.02,
+      "stk2": 228.53
     },
     {
       "cb": "36913",
@@ -1748,11 +1748,11 @@
       "name": "碩禾三",
       "ind": "—",
       "conv": 118.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 145.95,
+      "sp": 164.5,
+      "th": 139.41,
+      "cbth": 104.69,
+      "stk2": 139.41
     },
     {
       "cb": "37012",
@@ -1761,10 +1761,10 @@
       "ind": "—",
       "conv": 63.96,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 58.5,
+      "th": 91.46,
       "cbth": null,
-      "stk2": null
+      "stk2": 91.46
     },
     {
       "cb": "370201",
@@ -1772,11 +1772,11 @@
       "name": "大聯大E1",
       "ind": "—",
       "conv": 160.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 181.0,
+      "sp": 116.5,
+      "th": 72.45,
+      "cbth": 249.83,
+      "stk2": 72.45
     },
     {
       "cb": "37022",
@@ -1784,11 +1784,11 @@
       "name": "大聯大二",
       "ind": "—",
       "conv": 76.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 150.0,
+      "sp": 116.5,
+      "th": 151.5,
+      "cbth": 99.01,
+      "stk2": 151.5
     },
     {
       "cb": "37023",
@@ -1796,11 +1796,11 @@
       "name": "大聯大三",
       "ind": "—",
       "conv": 74.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 155.0,
+      "sp": 116.5,
+      "th": 156.17,
+      "cbth": 99.25,
+      "stk2": 156.17
     },
     {
       "cb": "37075",
@@ -1808,11 +1808,11 @@
       "name": "漢磊五",
       "ind": "—",
       "conv": 40.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 203.0,
+      "sp": 77.5,
+      "th": 193.27,
+      "cbth": 105.03,
+      "stk2": 193.27
     },
     {
       "cb": "37083",
@@ -1820,11 +1820,11 @@
       "name": "上緯投控三",
       "ind": "—",
       "conv": 86.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.0,
+      "sp": 124.0,
+      "th": 143.52,
+      "cbth": 97.55,
+      "stk2": 143.52
     },
     {
       "cb": "37084",
@@ -1832,11 +1832,11 @@
       "name": "上緯投控四",
       "ind": "—",
       "conv": 83.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 148.05,
+      "sp": 124.0,
+      "th": 149.4,
+      "cbth": 99.1,
+      "stk2": 149.4
     },
     {
       "cb": "37151",
@@ -1844,11 +1844,11 @@
       "name": "定穎投控一",
       "ind": "PCB",
       "conv": 140.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.45,
+      "sp": 169.0,
+      "th": 120.71,
+      "cbth": 116.35,
+      "stk2": 120.71
     },
     {
       "cb": "37152",
@@ -1856,11 +1856,11 @@
       "name": "定穎投控二",
       "ind": "PCB",
       "conv": 159.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 130.0,
+      "sp": 169.0,
+      "th": 106.29,
+      "cbth": 122.31,
+      "stk2": 106.29
     },
     {
       "cb": "37171",
@@ -1868,11 +1868,11 @@
       "name": "聯嘉投控一",
       "ind": "—",
       "conv": 17.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 132.5,
+      "sp": 22.85,
+      "th": 130.57,
+      "cbth": 101.48,
+      "stk2": 130.57
     },
     {
       "cb": "41135",
@@ -1880,11 +1880,11 @@
       "name": "聯上五",
       "ind": "—",
       "conv": 26.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.9,
+      "sp": 15.1,
+      "th": 57.41,
+      "cbth": 180.98,
+      "stk2": 57.41
     },
     {
       "cb": "41136",
@@ -1892,11 +1892,11 @@
       "name": "聯上六",
       "ind": "—",
       "conv": 20.45,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 88.0,
+      "sp": 15.1,
+      "th": 73.84,
+      "cbth": 119.18,
+      "stk2": 73.84
     },
     {
       "cb": "41236",
@@ -1904,11 +1904,11 @@
       "name": "晟德六",
       "ind": "—",
       "conv": 38.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.9,
+      "sp": 38.45,
+      "th": 99.61,
+      "cbth": 115.35,
+      "stk2": 99.61
     },
     {
       "cb": "41237",
@@ -1916,11 +1916,11 @@
       "name": "晟德七",
       "ind": "—",
       "conv": 39.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.8,
+      "sp": 38.45,
+      "th": 97.84,
+      "cbth": 102.0,
+      "stk2": 97.84
     },
     {
       "cb": "41238",
@@ -1928,11 +1928,11 @@
       "name": "晟德八",
       "ind": "—",
       "conv": 43.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 91.6,
+      "sp": 38.45,
+      "th": 89.42,
+      "cbth": 102.44,
+      "stk2": 89.42
     },
     {
       "cb": "41295",
@@ -1940,11 +1940,11 @@
       "name": "聯合五",
       "ind": "—",
       "conv": 105.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 109.05,
+      "sp": 89.2,
+      "th": 84.47,
+      "cbth": 129.1,
+      "stk2": 84.47
     },
     {
       "cb": "41372",
@@ -1952,11 +1952,11 @@
       "name": "麗豐二KY",
       "ind": "—",
       "conv": 141.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.85,
+      "sp": 111.5,
+      "th": 78.91,
+      "cbth": 130.34,
+      "stk2": 78.91
     },
     {
       "cb": "41645",
@@ -1964,11 +1964,11 @@
       "name": "承業醫五",
       "ind": "—",
       "conv": 47.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.0,
+      "sp": 30.2,
+      "th": 64.26,
+      "cbth": 155.62,
+      "stk2": 64.26
     },
     {
       "cb": "41684",
@@ -1976,11 +1976,11 @@
       "name": "醣聯四",
       "ind": "—",
       "conv": 23.91,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.1,
+      "sp": 26.05,
+      "th": 108.95,
+      "cbth": 105.64,
+      "stk2": 108.95
     },
     {
       "cb": "41903",
@@ -1988,11 +1988,11 @@
       "name": "佐登三KY",
       "ind": "—",
       "conv": 54.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.5,
+      "sp": 24.8,
+      "th": 45.76,
+      "cbth": 217.44,
+      "stk2": 45.76
     },
     {
       "cb": "44163",
@@ -2000,11 +2000,11 @@
       "name": "三圓三",
       "ind": "—",
       "conv": 65.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.85,
+      "sp": 11.6,
+      "th": 17.66,
+      "cbth": 554.08,
+      "stk2": 17.66
     },
     {
       "cb": "44383",
@@ -2012,11 +2012,11 @@
       "name": "廣越三",
       "ind": "—",
       "conv": 75.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.95,
+      "sp": 62.7,
+      "th": 83.6,
+      "cbth": 123.15,
+      "stk2": 83.6
     },
     {
       "cb": "44391",
@@ -2024,11 +2024,11 @@
       "name": "冠星一KY",
       "ind": "—",
       "conv": 100.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.0,
+      "sp": 90.8,
+      "th": 90.08,
+      "cbth": 104.35,
+      "stk2": 90.08
     },
     {
       "cb": "44421",
@@ -2036,11 +2036,11 @@
       "name": "竣邦一KY",
       "ind": "—",
       "conv": 48.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 117.95,
+      "sp": 51.0,
+      "th": 105.15,
+      "cbth": 112.17,
+      "stk2": 105.15
     },
     {
       "cb": "45102",
@@ -2048,11 +2048,11 @@
       "name": "高鋒二",
       "ind": "—",
       "conv": 48.41,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 111.0,
+      "sp": 49.5,
+      "th": 102.25,
+      "cbth": 108.56,
+      "stk2": 102.25
     },
     {
       "cb": "45421",
@@ -2060,11 +2060,11 @@
       "name": "科嶠一",
       "ind": "光電",
       "conv": 85.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 302.0,
+      "sp": 260.0,
+      "th": 304.09,
+      "cbth": 99.31,
+      "stk2": 304.09
     },
     {
       "cb": "45491",
@@ -2072,11 +2072,11 @@
       "name": "桓達一",
       "ind": "—",
       "conv": 154.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 120.0,
+      "th": 77.72,
+      "cbth": 147.97,
+      "stk2": 77.72
     },
     {
       "cb": "45554",
@@ -2084,11 +2084,11 @@
       "name": "氣立四",
       "ind": "半導體",
       "conv": 43.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 134.9,
+      "sp": 53.5,
+      "th": 123.27,
+      "cbth": 109.43,
+      "stk2": 123.27
     },
     {
       "cb": "45581",
@@ -2096,11 +2096,11 @@
       "name": "寶緯一",
       "ind": "—",
       "conv": 29.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.0,
+      "sp": 19.4,
+      "th": 65.1,
+      "cbth": 156.68,
+      "stk2": 65.1
     },
     {
       "cb": "45641",
@@ -2108,11 +2108,11 @@
       "name": "元翎一",
       "ind": "—",
       "conv": 26.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.5,
+      "sp": 16.05,
+      "th": 60.8,
+      "cbth": 160.36,
+      "stk2": 60.8
     },
     {
       "cb": "45663",
@@ -2120,11 +2120,11 @@
       "name": "時碩工業三",
       "ind": "通訊網路",
       "conv": 49.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 135.85,
+      "sp": 68.6,
+      "th": 140.0,
+      "cbth": 97.04,
+      "stk2": 140.0
     },
     {
       "cb": "45691",
@@ -2132,11 +2132,11 @@
       "name": "六方科一KY",
       "ind": "建設",
       "conv": 203.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 122.7,
+      "sp": 169.5,
+      "th": 83.13,
+      "cbth": 147.6,
+      "stk2": 83.13
     },
     {
       "cb": "45721",
@@ -2144,11 +2144,11 @@
       "name": "駐龍一",
       "ind": "其他電子",
       "conv": 160.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.35,
+      "sp": 147.0,
+      "th": 91.53,
+      "cbth": 110.73,
+      "stk2": 91.53
     },
     {
       "cb": "45811",
@@ -2156,11 +2156,11 @@
       "name": "光隆精密一KY",
       "ind": "—",
       "conv": 53.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 95.1,
+      "sp": 50.3,
+      "th": 94.19,
+      "cbth": 100.97,
+      "stk2": 94.19
     },
     {
       "cb": "47148",
@@ -2168,11 +2168,11 @@
       "name": "永捷八",
       "ind": "—",
       "conv": 16.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 116.4,
+      "sp": 14.0,
+      "th": 86.96,
+      "cbth": 133.85,
+      "stk2": 86.96
     },
     {
       "cb": "47223",
@@ -2180,11 +2180,11 @@
       "name": "國精化三",
       "ind": "—",
       "conv": 141.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 193.0,
+      "sp": 278.0,
+      "th": 196.74,
+      "cbth": 98.1,
+      "stk2": 196.74
     },
     {
       "cb": "47393",
@@ -2192,11 +2192,11 @@
       "name": "康普三",
       "ind": "—",
       "conv": 97.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 128.9,
+      "sp": 118.5,
+      "th": 121.17,
+      "cbth": 106.38,
+      "stk2": 121.17
     },
     {
       "cb": "47394",
@@ -2204,11 +2204,11 @@
       "name": "康普四",
       "ind": "—",
       "conv": 70.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 170.0,
+      "sp": 118.5,
+      "th": 168.09,
+      "cbth": 101.14,
+      "stk2": 168.09
     },
     {
       "cb": "47471",
@@ -2216,11 +2216,11 @@
       "name": "強生一",
       "ind": "—",
       "conv": 59.58,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.45,
+      "sp": 56.0,
+      "th": 93.99,
+      "cbth": 105.81,
+      "stk2": 93.99
     },
     {
       "cb": "47721",
@@ -2228,11 +2228,11 @@
       "name": "台特化一",
       "ind": "—",
       "conv": 323.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 132.55,
+      "sp": 300.0,
+      "th": 92.65,
+      "cbth": 143.07,
+      "stk2": 92.65
     },
     {
       "cb": "49066",
@@ -2241,10 +2241,10 @@
       "ind": "—",
       "conv": 26.6,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 48.9,
+      "th": 183.83,
       "cbth": null,
-      "stk2": null
+      "stk2": 183.83
     },
     {
       "cb": "49165",
@@ -2253,10 +2253,10 @@
       "ind": "—",
       "conv": 42.88,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 122.5,
+      "th": 285.68,
       "cbth": null,
-      "stk2": null
+      "stk2": 285.68
     },
     {
       "cb": "49231",
@@ -2264,11 +2264,11 @@
       "name": "力士一",
       "ind": "半導體",
       "conv": 34.66,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 132.45,
+      "sp": 43.8,
+      "th": 126.37,
+      "cbth": 104.81,
+      "stk2": 126.37
     },
     {
       "cb": "49674",
@@ -2276,11 +2276,11 @@
       "name": "十銓四",
       "ind": "—",
       "conv": 147.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 210.0,
+      "sp": 302.0,
+      "th": 205.44,
+      "cbth": 102.22,
+      "stk2": 205.44
     },
     {
       "cb": "49793",
@@ -2288,11 +2288,11 @@
       "name": "華星光三",
       "ind": "—",
       "conv": 176.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 370.0,
+      "sp": 590.0,
+      "th": 334.28,
+      "cbth": 110.69,
+      "stk2": 334.28
     },
     {
       "cb": "49794",
@@ -2300,11 +2300,11 @@
       "name": "華星光四",
       "ind": "—",
       "conv": 204.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 310.0,
+      "sp": 590.0,
+      "th": 288.79,
+      "cbth": 107.34,
+      "stk2": 288.79
     },
     {
       "cb": "50097",
@@ -2312,11 +2312,11 @@
       "name": "榮剛七",
       "ind": "—",
       "conv": 50.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.3,
+      "sp": 37.35,
+      "th": 74.25,
+      "cbth": 135.08,
+      "stk2": 74.25
     },
     {
       "cb": "52011",
@@ -2324,11 +2324,11 @@
       "name": "凱衛一",
       "ind": "—",
       "conv": 38.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 108.0,
+      "sp": 29.0,
+      "th": 75.32,
+      "cbth": 143.39,
+      "stk2": 75.32
     },
     {
       "cb": "52091",
@@ -2336,11 +2336,11 @@
       "name": "新鼎一",
       "ind": "—",
       "conv": 151.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 117.0,
+      "sp": 175.5,
+      "th": 116.15,
+      "cbth": 100.73,
+      "stk2": 116.15
     },
     {
       "cb": "52121",
@@ -2348,11 +2348,11 @@
       "name": "凌網一",
       "ind": "—",
       "conv": 57.73,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.25,
+      "sp": 46.25,
+      "th": 80.11,
+      "cbth": 122.64,
+      "stk2": 80.11
     },
     {
       "cb": "52303",
@@ -2360,11 +2360,11 @@
       "name": "雷笛克光學三",
       "ind": "—",
       "conv": 22.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.0,
+      "sp": 18.0,
+      "th": 81.82,
+      "cbth": 125.89,
+      "stk2": 81.82
     },
     {
       "cb": "52441",
@@ -2372,11 +2372,11 @@
       "name": "弘凱一",
       "ind": "—",
       "conv": 44.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.95,
+      "sp": 39.45,
+      "th": 88.65,
+      "cbth": 112.75,
+      "stk2": 88.65
     },
     {
       "cb": "52452",
@@ -2384,11 +2384,11 @@
       "name": "智晶二",
       "ind": "—",
       "conv": 35.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 92.5,
+      "sp": 27.9,
+      "th": 79.71,
+      "cbth": 116.05,
+      "stk2": 79.71
     },
     {
       "cb": "52635",
@@ -2396,11 +2396,11 @@
       "name": "智崴五",
       "ind": "—",
       "conv": 110.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 122.1,
+      "sp": 106.0,
+      "th": 96.01,
+      "cbth": 127.17,
+      "stk2": 96.01
     },
     {
       "cb": "52844",
@@ -2408,11 +2408,11 @@
       "name": "jpp四KY",
       "ind": "—",
       "conv": 353.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 136.1,
+      "sp": 416.5,
+      "th": 117.99,
+      "cbth": 115.35,
+      "stk2": 117.99
     },
     {
       "cb": "52845",
@@ -2420,11 +2420,11 @@
       "name": "jpp五KY",
       "ind": "—",
       "conv": 322.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 148.0,
+      "sp": 416.5,
+      "th": 129.11,
+      "cbth": 114.63,
+      "stk2": 129.11
     },
     {
       "cb": "53064",
@@ -2432,11 +2432,11 @@
       "name": "桂盟四",
       "ind": "—",
       "conv": 120.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.05,
+      "sp": 84.5,
+      "th": 70.42,
+      "cbth": 142.08,
+      "stk2": 70.42
     },
     {
       "cb": "53095",
@@ -2444,11 +2444,11 @@
       "name": "系統電五",
       "ind": "—",
       "conv": 38.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 183.0,
+      "sp": 81.8,
+      "th": 214.14,
+      "cbth": 85.46,
+      "stk2": 214.14
     },
     {
       "cb": "53096",
@@ -2456,11 +2456,11 @@
       "name": "系統電六",
       "ind": "—",
       "conv": 63.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 135.3,
+      "sp": 81.8,
+      "th": 128.82,
+      "cbth": 105.03,
+      "stk2": 128.82
     },
     {
       "cb": "53097",
@@ -2468,11 +2468,11 @@
       "name": "系統電七",
       "ind": "—",
       "conv": 55.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 152.0,
+      "sp": 81.8,
+      "th": 148.73,
+      "cbth": 102.2,
+      "stk2": 148.73
     },
     {
       "cb": "53211",
@@ -2480,11 +2480,11 @@
       "name": "美而快一",
       "ind": "—",
       "conv": 85.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.25,
+      "sp": 50.5,
+      "th": 59.2,
+      "cbth": 169.34,
+      "stk2": 59.2
     },
     {
       "cb": "53887",
@@ -2492,11 +2492,11 @@
       "name": "中磊七",
       "ind": "—",
       "conv": 130.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 110.0,
+      "sp": 88.9,
+      "th": 68.23,
+      "cbth": 161.22,
+      "stk2": 68.23
     },
     {
       "cb": "54342",
@@ -2504,11 +2504,11 @@
       "name": "崇越二",
       "ind": "—",
       "conv": 184.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 254.0,
+      "sp": 464.5,
+      "th": 252.31,
+      "cbth": 100.67,
+      "stk2": 252.31
     },
     {
       "cb": "54391",
@@ -2516,11 +2516,11 @@
       "name": "高技一",
       "ind": "—",
       "conv": 300.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 141.8,
+      "sp": 366.0,
+      "th": 122.0,
+      "cbth": 116.23,
+      "stk2": 122.0
     },
     {
       "cb": "54501",
@@ -2528,11 +2528,11 @@
       "name": "南良一",
       "ind": "—",
       "conv": 17.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.35,
+      "sp": 13.45,
+      "th": 77.3,
+      "cbth": 132.41,
+      "stk2": 77.3
     },
     {
       "cb": "54573",
@@ -2540,11 +2540,11 @@
       "name": "宣德三",
       "ind": "—",
       "conv": 65.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.05,
+      "sp": 31.35,
+      "th": 47.64,
+      "cbth": 197.42,
+      "stk2": 47.64
     },
     {
       "cb": "55344",
@@ -2552,11 +2552,11 @@
       "name": "長虹四",
       "ind": "—",
       "conv": 80.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.55,
+      "sp": 74.2,
+      "th": 92.75,
+      "cbth": 124.58,
+      "stk2": 92.75
     },
     {
       "cb": "56086",
@@ -2564,11 +2564,11 @@
       "name": "四維航六",
       "ind": "—",
       "conv": 22.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.45,
+      "sp": 14.95,
+      "th": 67.65,
+      "cbth": 147.01,
+      "stk2": 67.65
     },
     {
       "cb": "56087",
@@ -2576,11 +2576,11 @@
       "name": "四維航七",
       "ind": "—",
       "conv": 19.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 108.85,
+      "sp": 14.95,
+      "th": 77.46,
+      "cbth": 140.52,
+      "stk2": 77.46
     },
     {
       "cb": "59055",
@@ -2589,10 +2589,10 @@
       "ind": "—",
       "conv": 12.62,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 8.35,
+      "th": 66.16,
       "cbth": null,
-      "stk2": null
+      "stk2": 66.16
     },
     {
       "cb": "60151",
@@ -2600,11 +2600,11 @@
       "name": "宏遠證一",
       "ind": "—",
       "conv": 13.95,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 147.25,
+      "sp": 22.5,
+      "th": 161.29,
+      "cbth": 91.3,
+      "stk2": 161.29
     },
     {
       "cb": "60152",
@@ -2612,11 +2612,11 @@
       "name": "宏遠證二",
       "ind": "—",
       "conv": 9.81,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 235.0,
+      "sp": 22.5,
+      "th": 229.36,
+      "cbth": 102.46,
+      "stk2": 229.36
     },
     {
       "cb": "61011",
@@ -2624,11 +2624,11 @@
       "name": "寬魚國際一",
       "ind": "其他電子",
       "conv": 36.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.5,
+      "sp": 41.6,
+      "th": 112.74,
+      "cbth": 101.56,
+      "stk2": 112.74
     },
     {
       "cb": "61012",
@@ -2636,11 +2636,11 @@
       "name": "寬魚國際二",
       "ind": "其他電子",
       "conv": 38.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 41.6,
+      "th": 106.94,
+      "cbth": 97.25,
+      "stk2": 106.94
     },
     {
       "cb": "61041",
@@ -2648,11 +2648,11 @@
       "name": "創惟一",
       "ind": "半導體",
       "conv": 119.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 111.0,
+      "sp": 102.5,
+      "th": 86.13,
+      "cbth": 128.87,
+      "stk2": 86.13
     },
     {
       "cb": "61112",
@@ -2660,11 +2660,11 @@
       "name": "光聚晶電二",
       "ind": "—",
       "conv": 67.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.35,
+      "sp": 43.5,
+      "th": 64.93,
+      "cbth": 151.47,
+      "stk2": 64.93
     },
     {
       "cb": "61171",
@@ -2672,11 +2672,11 @@
       "name": "迎廣一",
       "ind": "其他電子",
       "conv": 82.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 111.0,
+      "sp": 85.1,
+      "th": 103.78,
+      "cbth": 106.96,
+      "stk2": 103.78
     },
     {
       "cb": "61172",
@@ -2684,11 +2684,11 @@
       "name": "迎廣二",
       "ind": "其他電子",
       "conv": 77.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 112.0,
+      "sp": 85.1,
+      "th": 109.95,
+      "cbth": 101.86,
+      "stk2": 109.95
     },
     {
       "cb": "61255",
@@ -2696,11 +2696,11 @@
       "name": "廣運五",
       "ind": "—",
       "conv": 112.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.5,
+      "sp": 66.6,
+      "th": 59.46,
+      "cbth": 169.02,
+      "stk2": 59.46
     },
     {
       "cb": "61263",
@@ -2708,11 +2708,11 @@
       "name": "信音三",
       "ind": "電子零組件",
       "conv": 26.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 159.0,
+      "sp": 43.0,
+      "th": 160.45,
+      "cbth": 99.1,
+      "stk2": 160.45
     },
     {
       "cb": "61506",
@@ -2720,11 +2720,11 @@
       "name": "撼訊六",
       "ind": "顯示卡",
       "conv": 90.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.1,
+      "sp": 71.4,
+      "th": 79.16,
+      "cbth": 123.93,
+      "stk2": 79.16
     },
     {
       "cb": "61565",
@@ -2732,11 +2732,11 @@
       "name": "松上五",
       "ind": "其他電子",
       "conv": 29.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.5,
+      "sp": 19.5,
+      "th": 67.24,
+      "cbth": 149.46,
+      "stk2": 67.24
     },
     {
       "cb": "61635",
@@ -2744,11 +2744,11 @@
       "name": "華電網五",
       "ind": "通訊網路",
       "conv": 25.02,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 262.0,
+      "sp": 55.5,
+      "th": 221.82,
+      "cbth": 118.11,
+      "stk2": 221.82
     },
     {
       "cb": "61777",
@@ -2756,11 +2756,11 @@
       "name": "達麗七",
       "ind": "建設",
       "conv": 46.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.5,
+      "sp": 44.65,
+      "th": 96.85,
+      "cbth": 118.22,
+      "stk2": 96.85
     },
     {
       "cb": "61793",
@@ -2768,11 +2768,11 @@
       "name": "亞通三",
       "ind": "其他電子",
       "conv": 33.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.1,
+      "sp": 24.3,
+      "th": 72.97,
+      "cbth": 137.18,
+      "stk2": 72.97
     },
     {
       "cb": "61794",
@@ -2780,11 +2780,11 @@
       "name": "亞通四",
       "ind": "其他電子",
       "conv": 28.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.55,
+      "sp": 24.3,
+      "th": 86.17,
+      "cbth": 114.37,
+      "stk2": 86.17
     },
     {
       "cb": "61827",
@@ -2792,11 +2792,11 @@
       "name": "合晶七",
       "ind": "半導體",
       "conv": 61.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 156.0,
+      "sp": 90.9,
+      "th": 148.53,
+      "cbth": 105.03,
+      "stk2": 148.53
     },
     {
       "cb": "61828",
@@ -2804,11 +2804,11 @@
       "name": "合晶八",
       "ind": "半導體",
       "conv": 33.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 275.0,
+      "sp": 90.9,
+      "th": 271.34,
+      "cbth": 101.35,
+      "stk2": 271.34
     },
     {
       "cb": "61843",
@@ -2816,11 +2816,11 @@
       "name": "大豐電三",
       "ind": "有線電視",
       "conv": 49.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.0,
+      "sp": 47.05,
+      "th": 95.24,
+      "cbth": 101.85,
+      "stk2": 95.24
     },
     {
       "cb": "61875",
@@ -2829,10 +2829,10 @@
       "ind": "自動化",
       "conv": 276.8,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 1115.0,
+      "th": 402.82,
       "cbth": null,
-      "stk2": null
+      "stk2": 402.82
     },
     {
       "cb": "61894",
@@ -2840,11 +2840,11 @@
       "name": "豐藝四",
       "ind": "電子通路",
       "conv": 43.14,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 135.5,
+      "sp": 52.8,
+      "th": 122.39,
+      "cbth": 110.71,
+      "stk2": 122.39
     },
     {
       "cb": "61907",
@@ -2852,11 +2852,11 @@
       "name": "萬泰科七",
       "ind": "通訊網路",
       "conv": 41.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 195.0,
+      "sp": 82.0,
+      "th": 196.64,
+      "cbth": 99.17,
+      "stk2": 196.64
     },
     {
       "cb": "61973",
@@ -2864,11 +2864,11 @@
       "name": "佳必琪三",
       "ind": "電子零組件",
       "conv": 152.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 209.0,
+      "sp": 316.5,
+      "th": 208.22,
+      "cbth": 100.37,
+      "stk2": 208.22
     },
     {
       "cb": "61993",
@@ -2876,11 +2876,11 @@
       "name": "天品三",
       "ind": "生技",
       "conv": 104.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.4,
+      "sp": 90.8,
+      "th": 86.81,
+      "cbth": 131.78,
+      "stk2": 86.81
     },
     {
       "cb": "61994",
@@ -2888,11 +2888,11 @@
       "name": "天品四",
       "ind": "生技",
       "conv": 114.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 93.3,
+      "sp": 90.8,
+      "th": 79.09,
+      "cbth": 117.97,
+      "stk2": 79.09
     },
     {
       "cb": "62075",
@@ -2900,11 +2900,11 @@
       "name": "雷科五",
       "ind": "其他電子",
       "conv": 50.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 299.0,
+      "sp": 153.0,
+      "th": 301.78,
+      "cbth": 99.08,
+      "stk2": 301.78
     },
     {
       "cb": "62076",
@@ -2912,11 +2912,11 @@
       "name": "雷科六",
       "ind": "其他電子",
       "conv": 49.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 304.0,
+      "sp": 153.0,
+      "th": 310.98,
+      "cbth": 97.76,
+      "stk2": 310.98
     },
     {
       "cb": "62093",
@@ -2924,11 +2924,11 @@
       "name": "今國光三",
       "ind": "光電",
       "conv": 38.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 222.0,
+      "sp": 84.7,
+      "th": 219.43,
+      "cbth": 101.17,
+      "stk2": 219.43
     },
     {
       "cb": "62194",
@@ -2936,11 +2936,11 @@
       "name": "富旺四",
       "ind": "建設",
       "conv": 21.17,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 12.85,
+      "th": 60.7,
+      "cbth": 171.33,
+      "stk2": 60.7
     },
     {
       "cb": "62433",
@@ -2948,11 +2948,11 @@
       "name": "迅杰三",
       "ind": "半導體",
       "conv": 63.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 93.0,
+      "sp": 33.75,
+      "th": 53.32,
+      "cbth": 174.42,
+      "stk2": 53.32
     },
     {
       "cb": "62695",
@@ -2960,11 +2960,11 @@
       "name": "台郡五",
       "ind": "PCB",
       "conv": 93.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 109.75,
+      "sp": 71.5,
+      "th": 76.88,
+      "cbth": 142.75,
+      "stk2": 76.88
     },
     {
       "cb": "62696",
@@ -2972,11 +2972,11 @@
       "name": "台郡六",
       "ind": "PCB",
       "conv": 101.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.5,
+      "sp": 71.5,
+      "th": 70.79,
+      "cbth": 146.21,
+      "stk2": 70.79
     },
     {
       "cb": "62745",
@@ -2984,11 +2984,11 @@
       "name": "台燿五",
       "ind": "PCB",
       "conv": 380.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 442.0,
+      "sp": 1695.0,
+      "th": 445.12,
+      "cbth": 99.3,
+      "stk2": 445.12
     },
     {
       "cb": "62756",
@@ -2996,11 +2996,11 @@
       "name": "元山六",
       "ind": "其他電子",
       "conv": 24.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 204.0,
+      "sp": 51.3,
+      "th": 213.75,
+      "cbth": 95.44,
+      "stk2": 213.75
     },
     {
       "cb": "62822",
@@ -3008,11 +3008,11 @@
       "name": "康舒二",
       "ind": "電源供應",
       "conv": 46.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 156.0,
+      "sp": 70.8,
+      "th": 153.58,
+      "cbth": 101.58,
+      "stk2": 153.58
     },
     {
       "cb": "62843",
@@ -3020,11 +3020,11 @@
       "name": "佳邦三",
       "ind": "電子零組件",
       "conv": 86.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 139.5,
+      "sp": 101.0,
+      "th": 116.63,
+      "cbth": 119.61,
+      "stk2": 116.63
     },
     {
       "cb": "629010",
@@ -3032,11 +3032,11 @@
       "name": "良維十",
       "ind": "電子零組件",
       "conv": 75.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 475.0,
+      "sp": 363.5,
+      "th": 478.92,
+      "cbth": 99.18,
+      "stk2": 478.92
     },
     {
       "cb": "64145",
@@ -3044,11 +3044,11 @@
       "name": "樺漢五",
       "ind": "工業電腦",
       "conv": 273.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 137.45,
+      "sp": 389.5,
+      "th": 142.36,
+      "cbth": 96.55,
+      "stk2": 142.36
     },
     {
       "cb": "64251",
@@ -3056,11 +3056,11 @@
       "name": "易發一",
       "ind": "其他",
       "conv": 58.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 164.0,
+      "sp": 84.2,
+      "th": 143.44,
+      "cbth": 114.33,
+      "stk2": 143.44
     },
     {
       "cb": "64324",
@@ -3068,11 +3068,11 @@
       "name": "今展科四",
       "ind": "光電",
       "conv": 30.88,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 200.0,
+      "sp": 61.2,
+      "th": 198.19,
+      "cbth": 100.91,
+      "stk2": 198.19
     },
     {
       "cb": "64422",
@@ -3080,11 +3080,11 @@
       "name": "光聖二",
       "ind": "光電",
       "conv": 1103.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 200.0,
+      "sp": 2145.0,
+      "th": 194.38,
+      "cbth": 102.89,
+      "stk2": 194.38
     },
     {
       "cb": "64423",
@@ -3092,11 +3092,11 @@
       "name": "光聖三",
       "ind": "光電",
       "conv": 1065.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 202.0,
+      "sp": 2145.0,
+      "th": 201.24,
+      "cbth": 100.38,
+      "stk2": 201.24
     },
     {
       "cb": "64512",
@@ -3104,11 +3104,11 @@
       "name": "訊芯二KY",
       "ind": "半導體",
       "conv": 240.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 306.0,
+      "sp": 680.0,
+      "th": 282.63,
+      "cbth": 108.27,
+      "stk2": 282.63
     },
     {
       "cb": "64693",
@@ -3116,11 +3116,11 @@
       "name": "大樹三",
       "ind": "藥局",
       "conv": 132.53,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.9,
+      "sp": 74.6,
+      "th": 56.29,
+      "cbth": 179.25,
+      "stk2": 56.29
     },
     {
       "cb": "64724",
@@ -3128,11 +3128,11 @@
       "name": "保瑞四",
       "ind": "生技醫療",
       "conv": 500.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 96.0,
+      "sp": 363.0,
+      "th": 72.6,
+      "cbth": 132.23,
+      "stk2": 72.6
     },
     {
       "cb": "64725",
@@ -3140,11 +3140,11 @@
       "name": "保瑞五",
       "ind": "生技醫療",
       "conv": 485.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 95.2,
+      "sp": 363.0,
+      "th": 74.85,
+      "cbth": 127.19,
+      "stk2": 74.85
     },
     {
       "cb": "64773",
@@ -3152,11 +3152,11 @@
       "name": "安集三",
       "ind": "其他電子",
       "conv": 41.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.95,
+      "sp": 34.35,
+      "th": 81.98,
+      "cbth": 123.14,
+      "stk2": 81.98
     },
     {
       "cb": "64774",
@@ -3164,11 +3164,11 @@
       "name": "安集四",
       "ind": "其他電子",
       "conv": 50.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 92.4,
+      "sp": 34.35,
+      "th": 68.15,
+      "cbth": 135.58,
+      "stk2": 68.15
     },
     {
       "cb": "64775",
@@ -3176,11 +3176,11 @@
       "name": "安集五",
       "ind": "其他電子",
       "conv": 44.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.0,
+      "sp": 34.35,
+      "th": 77.54,
+      "cbth": 121.23,
+      "stk2": 77.54
     },
     {
       "cb": "65096",
@@ -3188,11 +3188,11 @@
       "name": "聚和六",
       "ind": "化學",
       "conv": 37.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 139.25,
+      "sp": 51.5,
+      "th": 136.97,
+      "cbth": 101.66,
+      "stk2": 136.97
     },
     {
       "cb": "65101",
@@ -3200,11 +3200,11 @@
       "name": "精測一",
       "ind": "半導體設備",
       "conv": 2016.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 181.0,
+      "sp": 3505.0,
+      "th": 173.79,
+      "cbth": 104.15,
+      "stk2": 173.79
     },
     {
       "cb": "65152",
@@ -3212,11 +3212,11 @@
       "name": "穎崴二",
       "ind": "半導體設備",
       "conv": 3540.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 246.0,
+      "sp": 8650.0,
+      "th": 244.32,
+      "cbth": 100.69,
+      "stk2": 244.32
     },
     {
       "cb": "65331",
@@ -3224,11 +3224,11 @@
       "name": "晶心科一",
       "ind": "半導體",
       "conv": 308.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.0,
+      "sp": 225.0,
+      "th": 73.05,
+      "cbth": 138.26,
+      "stk2": 73.05
     },
     {
       "cb": "65381",
@@ -3236,11 +3236,11 @@
       "name": "倉和一",
       "ind": "機械",
       "conv": 104.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 128.0,
+      "sp": 136.0,
+      "th": 130.27,
+      "cbth": 98.26,
+      "stk2": 130.27
     },
     {
       "cb": "65461",
@@ -3248,11 +3248,11 @@
       "name": "正基一",
       "ind": "其他電子",
       "conv": 149.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.0,
+      "sp": 77.6,
+      "th": 52.08,
+      "cbth": 192.01,
+      "stk2": 52.08
     },
     {
       "cb": "65472",
@@ -3260,11 +3260,11 @@
       "name": "高端疫苗二",
       "ind": "生技",
       "conv": 37.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 135.0,
+      "sp": 49.85,
+      "th": 134.73,
+      "cbth": 100.2,
+      "stk2": 134.73
     },
     {
       "cb": "65521",
@@ -3272,11 +3272,11 @@
       "name": "易華電一",
       "ind": "其他電子",
       "conv": 58.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 33.85,
+      "th": 57.57,
+      "cbth": 180.65,
+      "stk2": 57.57
     },
     {
       "cb": "65761",
@@ -3284,11 +3284,11 @@
       "name": "逸達一",
       "ind": "生技",
       "conv": 84.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 76.5,
+      "th": 90.75,
+      "cbth": 126.72,
+      "stk2": 90.75
     },
     {
       "cb": "65841",
@@ -3296,11 +3296,11 @@
       "name": "南俊國際一",
       "ind": "其他",
       "conv": 177.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 390.0,
+      "sp": 670.0,
+      "th": 377.46,
+      "cbth": 103.32,
+      "stk2": 377.46
     },
     {
       "cb": "65842",
@@ -3308,11 +3308,11 @@
       "name": "南俊國際二",
       "ind": "其他",
       "conv": 191.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 371.0,
+      "sp": 670.0,
+      "th": 349.69,
+      "cbth": 106.09,
+      "stk2": 349.69
     },
     {
       "cb": "65851",
@@ -3320,11 +3320,11 @@
       "name": "鼎基一",
       "ind": "化學",
       "conv": 110.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 116.0,
+      "sp": 109.0,
+      "th": 98.29,
+      "cbth": 118.02,
+      "stk2": 98.29
     },
     {
       "cb": "65852",
@@ -3332,11 +3332,11 @@
       "name": "鼎基二",
       "ind": "化學",
       "conv": 110.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 112.0,
+      "sp": 109.0,
+      "th": 98.46,
+      "cbth": 113.75,
+      "stk2": 98.46
     },
     {
       "cb": "65914",
@@ -3344,11 +3344,11 @@
       "name": "動力四KY",
       "ind": "其他電子",
       "conv": 78.61,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 96.0,
+      "sp": 59.1,
+      "th": 75.18,
+      "cbth": 127.69,
+      "stk2": 75.18
     },
     {
       "cb": "66034",
@@ -3356,11 +3356,11 @@
       "name": "富強鑫四",
       "ind": "—",
       "conv": 26.63,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 111.0,
+      "sp": 23.9,
+      "th": 89.75,
+      "cbth": 123.68,
+      "stk2": 89.75
     },
     {
       "cb": "66163",
@@ -3368,11 +3368,11 @@
       "name": "特昇三KY",
       "ind": "其他",
       "conv": 14.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.55,
+      "sp": 9.89,
+      "th": 68.21,
+      "cbth": 143.01,
+      "stk2": 68.21
     },
     {
       "cb": "66241",
@@ -3380,11 +3380,11 @@
       "name": "萬年清一",
       "ind": "其他",
       "conv": 40.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.0,
+      "sp": 43.0,
+      "th": 105.91,
+      "cbth": 132.19,
+      "stk2": 105.91
     },
     {
       "cb": "66292",
@@ -3392,11 +3392,11 @@
       "name": "泰金二KY",
       "ind": "其他",
       "conv": 119.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 105.4,
+      "sp": 119.5,
+      "th": 99.75,
+      "cbth": 105.66,
+      "stk2": 99.75
     },
     {
       "cb": "66411",
@@ -3405,10 +3405,10 @@
       "ind": "其他",
       "conv": 56.5,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 19.05,
+      "th": 33.72,
       "cbth": null,
-      "stk2": null
+      "stk2": 33.72
     },
     {
       "cb": "66451",
@@ -3416,11 +3416,11 @@
       "name": "金萬林一創",
       "ind": "生技",
       "conv": 27.87,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.95,
+      "sp": 11.8,
+      "th": 42.34,
+      "cbth": 243.15,
+      "stk2": 42.34
     },
     {
       "cb": "66642",
@@ -3428,11 +3428,11 @@
       "name": "群翊二",
       "ind": "其他電子",
       "conv": 292.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 152.0,
+      "sp": 409.0,
+      "th": 140.02,
+      "cbth": 108.56,
+      "stk2": 140.02
     },
     {
       "cb": "66702",
@@ -3440,11 +3440,11 @@
       "name": "復盛應用二",
       "ind": "機械",
       "conv": 270.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 120.5,
+      "sp": 280.0,
+      "th": 103.7,
+      "cbth": 116.2,
+      "stk2": 103.7
     },
     {
       "cb": "66721",
@@ -3452,11 +3452,11 @@
       "name": "騰輝電子一KY",
       "ind": "電子零組件",
       "conv": 93.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 225.0,
+      "sp": 222.0,
+      "th": 237.69,
+      "cbth": 94.66,
+      "stk2": 237.69
     },
     {
       "cb": "66722",
@@ -3464,11 +3464,11 @@
       "name": "騰輝電子二KY",
       "ind": "電子零組件",
       "conv": 90.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 240.0,
+      "sp": 222.0,
+      "th": 245.3,
+      "cbth": 97.84,
+      "stk2": 245.3
     },
     {
       "cb": "66801",
@@ -3476,11 +3476,11 @@
       "name": "鑫創電子一",
       "ind": "其他電子",
       "conv": 73.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.9,
+      "sp": 56.2,
+      "th": 76.46,
+      "cbth": 133.27,
+      "stk2": 76.46
     },
     {
       "cb": "67062",
@@ -3488,11 +3488,11 @@
       "name": "惠特二",
       "ind": "其他電子",
       "conv": 176.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 120.35,
+      "sp": 194.5,
+      "th": 110.51,
+      "cbth": 108.9,
+      "stk2": 110.51
     },
     {
       "cb": "67152",
@@ -3500,11 +3500,11 @@
       "name": "嘉基二",
       "ind": "電子零組件",
       "conv": 157.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 290.0,
+      "sp": 455.0,
+      "th": 289.62,
+      "cbth": 100.13,
+      "stk2": 289.62
     },
     {
       "cb": "67531",
@@ -3512,11 +3512,11 @@
       "name": "龍德造船一",
       "ind": "造船",
       "conv": 116.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 114.5,
+      "sp": 124.0,
+      "th": 106.35,
+      "cbth": 107.66,
+      "stk2": 106.35
     },
     {
       "cb": "67681",
@@ -3524,11 +3524,11 @@
       "name": "志強一KY",
       "ind": "其他",
       "conv": 95.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 111.4,
+      "sp": 95.7,
+      "th": 100.53,
+      "cbth": 110.81,
+      "stk2": 100.53
     },
     {
       "cb": "67711",
@@ -3536,11 +3536,11 @@
       "name": "平和環保一創",
       "ind": "環保",
       "conv": 51.66,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.0,
+      "sp": 41.85,
+      "th": 81.01,
+      "cbth": 127.14,
+      "stk2": 81.01
     },
     {
       "cb": "67961",
@@ -3548,11 +3548,11 @@
       "name": "晉弘一",
       "ind": "生技醫療",
       "conv": 106.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.2,
+      "sp": 62.7,
+      "th": 58.98,
+      "cbth": 166.5,
+      "stk2": 58.98
     },
     {
       "cb": "67962",
@@ -3560,11 +3560,11 @@
       "name": "晉弘二",
       "ind": "生技醫療",
       "conv": 100.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 87.5,
+      "sp": 62.7,
+      "th": 62.7,
+      "cbth": 139.55,
+      "stk2": 62.7
     },
     {
       "cb": "68041",
@@ -3572,11 +3572,11 @@
       "name": "明係一",
       "ind": "其他電子",
       "conv": 61.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.9,
+      "sp": 16.3,
+      "th": 26.33,
+      "cbth": 379.42,
+      "stk2": 26.33
     },
     {
       "cb": "68061",
@@ -3584,11 +3584,11 @@
       "name": "森崴能源一",
       "ind": "再生能源",
       "conv": 105.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 96.85,
+      "sp": 6.26,
+      "th": 5.96,
+      "cbth": 1625.0,
+      "stk2": 5.96
     },
     {
       "cb": "68211",
@@ -3596,11 +3596,11 @@
       "name": "聯寶一",
       "ind": "其他電子",
       "conv": 42.19,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 164.0,
+      "sp": 67.5,
+      "th": 159.99,
+      "cbth": 102.51,
+      "stk2": 159.99
     },
     {
       "cb": "68231",
@@ -3609,10 +3609,10 @@
       "ind": "其他電子",
       "conv": 76.7,
       "cbp": null,
-      "sp": null,
-      "th": null,
+      "sp": 71.4,
+      "th": 93.09,
       "cbth": null,
-      "stk2": null
+      "stk2": 93.09
     },
     {
       "cb": "68301",
@@ -3620,11 +3620,11 @@
       "name": "汎銓一",
       "ind": "半導體設備",
       "conv": 147.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 479.0,
+      "sp": 676.0,
+      "th": 458.62,
+      "cbth": 104.44,
+      "stk2": 458.62
     },
     {
       "cb": "68351",
@@ -3632,11 +3632,11 @@
       "name": "圓裕一",
       "ind": "其他",
       "conv": 48.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 97.55,
+      "sp": 37.5,
+      "th": 76.84,
+      "cbth": 126.95,
+      "stk2": 76.84
     },
     {
       "cb": "68401",
@@ -3644,11 +3644,11 @@
       "name": "東研信超一",
       "ind": "其他電子",
       "conv": 65.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 108.0,
+      "sp": 69.9,
+      "th": 106.39,
+      "cbth": 101.51,
+      "stk2": 106.39
     },
     {
       "cb": "68431",
@@ -3656,11 +3656,11 @@
       "name": "進典一",
       "ind": "其他電子",
       "conv": 61.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.1,
+      "sp": 40.9,
+      "th": 66.61,
+      "cbth": 151.78,
+      "stk2": 66.61
     },
     {
       "cb": "68461",
@@ -3668,11 +3668,11 @@
       "name": "綠茵一",
       "ind": "再生能源",
       "conv": 80.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.7,
+      "sp": 68.0,
+      "th": 84.58,
+      "cbth": 111.97,
+      "stk2": 84.58
     },
     {
       "cb": "68462",
@@ -3680,11 +3680,11 @@
       "name": "綠茵二",
       "ind": "再生能源",
       "conv": 78.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.8,
+      "sp": 68.0,
+      "th": 87.18,
+      "cbth": 115.62,
+      "stk2": 87.18
     },
     {
       "cb": "68541",
@@ -3692,11 +3692,11 @@
       "name": "錼創科技一KY創",
       "ind": "光電",
       "conv": 248.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 110.55,
+      "sp": 143.5,
+      "th": 57.79,
+      "cbth": 191.3,
+      "stk2": 57.79
     },
     {
       "cb": "68621",
@@ -3704,11 +3704,11 @@
       "name": "三集瑞一KY",
       "ind": "其他",
       "conv": 197.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 113.6,
+      "sp": 186.0,
+      "th": 94.42,
+      "cbth": 120.31,
+      "stk2": 94.42
     },
     {
       "cb": "68631",
@@ -3716,11 +3716,11 @@
       "name": "永道一KY",
       "ind": "其他",
       "conv": 294.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 91.5,
+      "sp": 106.5,
+      "th": 36.11,
+      "cbth": 253.39,
+      "stk2": 36.11
     },
     {
       "cb": "68701",
@@ -3728,11 +3728,11 @@
       "name": "騰雲一",
       "ind": "其他電子",
       "conv": 238.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 120.0,
+      "sp": 275.5,
+      "th": 115.66,
+      "cbth": 103.75,
+      "stk2": 115.66
     },
     {
       "cb": "68702",
@@ -3740,11 +3740,11 @@
       "name": "騰雲二",
       "ind": "其他電子",
       "conv": 226.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 128.5,
+      "sp": 275.5,
+      "th": 121.42,
+      "cbth": 105.83,
+      "stk2": 121.42
     },
     {
       "cb": "68731",
@@ -3752,11 +3752,11 @@
       "name": "泓德能源一",
       "ind": "再生能源",
       "conv": 95.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 137.55,
+      "sp": 98.6,
+      "th": 103.35,
+      "cbth": 133.09,
+      "stk2": 103.35
     },
     {
       "cb": "68732",
@@ -3764,11 +3764,11 @@
       "name": "泓德能源二",
       "ind": "再生能源",
       "conv": 215.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 85.85,
+      "sp": 98.6,
+      "th": 45.78,
+      "cbth": 187.53,
+      "stk2": 45.78
     },
     {
       "cb": "68741",
@@ -3776,11 +3776,11 @@
       "name": "倍力一",
       "ind": "其他電子",
       "conv": 103.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.95,
+      "sp": 82.9,
+      "th": 80.49,
+      "cbth": 130.39,
+      "stk2": 80.49
     },
     {
       "cb": "68901",
@@ -3788,11 +3788,11 @@
       "name": "來億一KY",
       "ind": "其他",
       "conv": 246.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.5,
+      "sp": 231.5,
+      "th": 93.95,
+      "cbth": 105.91,
+      "stk2": 93.95
     },
     {
       "cb": "68902",
@@ -3800,11 +3800,11 @@
       "name": "來億二KY",
       "ind": "其他",
       "conv": 245.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.0,
+      "sp": 231.5,
+      "th": 94.41,
+      "cbth": 105.92,
+      "stk2": 94.41
     },
     {
       "cb": "68941",
@@ -3812,11 +3812,11 @@
       "name": "衛司特一",
       "ind": "其他電子",
       "conv": 254.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 150.0,
+      "sp": 384.0,
+      "th": 150.65,
+      "cbth": 99.57,
+      "stk2": 150.65
     },
     {
       "cb": "69041",
@@ -3824,11 +3824,11 @@
       "name": "伯鑫一",
       "ind": "其他電子",
       "conv": 130.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.9,
+      "sp": 118.0,
+      "th": 90.77,
+      "cbth": 115.57,
+      "stk2": 90.77
     },
     {
       "cb": "69131",
@@ -3836,11 +3836,11 @@
       "name": "鴻呈一",
       "ind": "其他電子",
       "conv": 126.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 140.0,
+      "sp": 136.5,
+      "th": 108.33,
+      "cbth": 129.23,
+      "stk2": 108.33
     },
     {
       "cb": "69571",
@@ -3848,11 +3848,11 @@
       "name": "裕慶一KY",
       "ind": "其他",
       "conv": 190.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 105.65,
+      "sp": 194.0,
+      "th": 102.11,
+      "cbth": 103.47,
+      "stk2": 102.11
     },
     {
       "cb": "69821",
@@ -3860,11 +3860,11 @@
       "name": "大井泵浦一",
       "ind": "機械",
       "conv": 63.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 105.9,
+      "sp": 63.2,
+      "th": 99.37,
+      "cbth": 106.57,
+      "stk2": 99.37
     },
     {
       "cb": "69822",
@@ -3872,11 +3872,11 @@
       "name": "大井泵浦二",
       "ind": "機械",
       "conv": 61.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 105.5,
+      "sp": 63.2,
+      "th": 102.27,
+      "cbth": 103.16,
+      "stk2": 102.27
     },
     {
       "cb": "74022",
@@ -3884,11 +3884,11 @@
       "name": "邑錡二",
       "ind": "電子零組件",
       "conv": 97.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 123.4,
+      "sp": 100.0,
+      "th": 102.46,
+      "cbth": 120.44,
+      "stk2": 102.46
     },
     {
       "cb": "75561",
@@ -3896,11 +3896,11 @@
       "name": "意德士一永",
       "ind": "其他",
       "conv": 180.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 160.0,
+      "sp": 276.5,
+      "th": 152.85,
+      "cbth": 104.68,
+      "stk2": 152.85
     },
     {
       "cb": "75562",
@@ -3908,11 +3908,11 @@
       "name": "意德士二",
       "ind": "其他",
       "conv": 177.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 160.0,
+      "sp": 276.5,
+      "th": 155.86,
+      "cbth": 102.66,
+      "stk2": 155.86
     },
     {
       "cb": "77131",
@@ -3920,11 +3920,11 @@
       "name": "威力德生醫一",
       "ind": "生技",
       "conv": 69.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.6,
+      "sp": 70.8,
+      "th": 101.72,
+      "cbth": 101.85,
+      "stk2": 101.72
     },
     {
       "cb": "80212",
@@ -3932,11 +3932,11 @@
       "name": "尖點二",
       "ind": "電子零組件",
       "conv": 201.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 219.0,
+      "sp": 441.0,
+      "th": 218.53,
+      "cbth": 100.22,
+      "stk2": 218.53
     },
     {
       "cb": "80273",
@@ -3944,11 +3944,11 @@
       "name": "鈦昇三",
       "ind": "半導體",
       "conv": 64.74,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 500.0,
+      "sp": 292.5,
+      "th": 451.81,
+      "cbth": 110.67,
+      "stk2": 451.81
     },
     {
       "cb": "80282",
@@ -3956,11 +3956,11 @@
       "name": "昇陽半導體二",
       "ind": "半導體",
       "conv": 138.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 245.0,
+      "sp": 341.0,
+      "th": 247.1,
+      "cbth": 99.15,
+      "stk2": 247.1
     },
     {
       "cb": "80426",
@@ -3968,11 +3968,11 @@
       "name": "金山電六",
       "ind": "電源供應",
       "conv": 60.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 241.0,
+      "sp": 149.0,
+      "th": 248.33,
+      "cbth": 97.05,
+      "stk2": 248.33
     },
     {
       "cb": "80506",
@@ -3980,11 +3980,11 @@
       "name": "廣積六",
       "ind": "工業電腦",
       "conv": 63.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 116.4,
+      "sp": 57.1,
+      "th": 90.21,
+      "cbth": 129.03,
+      "stk2": 90.21
     },
     {
       "cb": "80872",
@@ -3992,11 +3992,11 @@
       "name": "麗升能源二",
       "ind": "再生能源",
       "conv": 39.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 94.8,
+      "sp": 35.2,
+      "th": 89.34,
+      "cbth": 106.11,
+      "stk2": 89.34
     },
     {
       "cb": "80914",
@@ -4004,11 +4004,11 @@
       "name": "翔名四",
       "ind": "其他電子",
       "conv": 127.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 199.0,
+      "sp": 254.5,
+      "th": 200.39,
+      "cbth": 99.31,
+      "stk2": 200.39
     },
     {
       "cb": "80924",
@@ -4016,11 +4016,11 @@
       "name": "建暐四",
       "ind": "其他電子",
       "conv": 14.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 131.5,
+      "sp": 17.0,
+      "th": 117.24,
+      "cbth": 112.16,
+      "stk2": 117.24
     },
     {
       "cb": "81042",
@@ -4028,11 +4028,11 @@
       "name": "錸寶二",
       "ind": "光電",
       "conv": 69.98,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 96.0,
+      "sp": 42.75,
+      "th": 61.09,
+      "cbth": 157.15,
+      "stk2": 61.09
     },
     {
       "cb": "81114",
@@ -4040,11 +4040,11 @@
       "name": "立碁四",
       "ind": "—",
       "conv": 75.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 125.2,
+      "sp": 62.9,
+      "th": 83.75,
+      "cbth": 149.49,
+      "stk2": 83.75
     },
     {
       "cb": "811210",
@@ -4052,11 +4052,11 @@
       "name": "至上十",
       "ind": "電子通路",
       "conv": 73.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 133.35,
+      "sp": 95.6,
+      "th": 130.07,
+      "cbth": 102.52,
+      "stk2": 130.07
     },
     {
       "cb": "81473",
@@ -4064,11 +4064,11 @@
       "name": "正淩三",
       "ind": "其他電子",
       "conv": 132.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 132.5,
+      "sp": 162.5,
+      "th": 123.01,
+      "cbth": 107.71,
+      "stk2": 123.01
     },
     {
       "cb": "81551",
@@ -4076,11 +4076,11 @@
       "name": "博智一",
       "ind": "其他電子",
       "conv": 121.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 314.0,
+      "sp": 382.0,
+      "th": 314.14,
+      "cbth": 99.96,
+      "stk2": 314.14
     },
     {
       "cb": "81714",
@@ -4088,11 +4088,11 @@
       "name": "天宇四",
       "ind": "其他電子",
       "conv": 30.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 103.25,
+      "sp": 25.9,
+      "th": 84.92,
+      "cbth": 121.59,
+      "stk2": 84.92
     },
     {
       "cb": "81715",
@@ -4100,11 +4100,11 @@
       "name": "天宇五",
       "ind": "其他電子",
       "conv": 32.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 95.0,
+      "sp": 25.9,
+      "th": 79.94,
+      "cbth": 118.84,
+      "stk2": 79.94
     },
     {
       "cb": "82102",
@@ -4112,11 +4112,11 @@
       "name": "勤誠二",
       "ind": "伺服器",
       "conv": 1007.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 167.0,
+      "sp": 1420.0,
+      "th": 140.98,
+      "cbth": 118.46,
+      "stk2": 140.98
     },
     {
       "cb": "82103",
@@ -4124,11 +4124,11 @@
       "name": "勤誠三",
       "ind": "伺服器",
       "conv": 985.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 168.0,
+      "sp": 1420.0,
+      "th": 144.12,
+      "cbth": 116.57,
+      "stk2": 144.12
     },
     {
       "cb": "82551",
@@ -4136,11 +4136,11 @@
       "name": "朋程一",
       "ind": "電子零組件",
       "conv": 196.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 180.0,
+      "th": 91.74,
+      "cbth": 125.35,
+      "stk2": 91.74
     },
     {
       "cb": "82711",
@@ -4148,11 +4148,11 @@
       "name": "宇瞻一",
       "ind": "—",
       "conv": 165.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 156.0,
+      "sp": 245.0,
+      "th": 148.48,
+      "cbth": 105.06,
+      "stk2": 148.48
     },
     {
       "cb": "82993",
@@ -4160,11 +4160,11 @@
       "name": "群聯三",
       "ind": "半導體",
       "conv": 2488.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 155.0,
+      "sp": 2580.0,
+      "th": 103.7,
+      "cbth": 149.47,
+      "stk2": 103.7
     },
     {
       "cb": "83742",
@@ -4172,11 +4172,11 @@
       "name": "羅昇二",
       "ind": "電子通路",
       "conv": 132.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 104.0,
+      "sp": 99.0,
+      "th": 74.72,
+      "cbth": 139.19,
+      "stk2": 74.72
     },
     {
       "cb": "84041",
@@ -4184,11 +4184,11 @@
       "name": "百和興業一KY",
       "ind": "紡織",
       "conv": 26.8,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.5,
+      "sp": 17.8,
+      "th": 66.42,
+      "cbth": 154.32,
+      "stk2": 66.42
     },
     {
       "cb": "84113",
@@ -4196,11 +4196,11 @@
       "name": "福貞三KY",
       "ind": "其他",
       "conv": 13.3,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.25,
+      "sp": 12.15,
+      "th": 91.35,
+      "cbth": 109.74,
+      "stk2": 91.35
     },
     {
       "cb": "84221",
@@ -4208,11 +4208,11 @@
       "name": "可寧衛一",
       "ind": "環保",
       "conv": 14.6,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 190.0,
+      "sp": 28.25,
+      "th": 193.49,
+      "cbth": 98.2,
+      "stk2": 193.49
     },
     {
       "cb": "84222",
@@ -4220,11 +4220,11 @@
       "name": "可寧衛二",
       "ind": "環保",
       "conv": 19.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 146.0,
+      "sp": 28.25,
+      "th": 148.68,
+      "cbth": 98.2,
+      "stk2": 148.68
     },
     {
       "cb": "84312",
@@ -4232,11 +4232,11 @@
       "name": "匯鑽科二",
       "ind": "其他電子",
       "conv": 68.0,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 96.55,
+      "sp": 55.8,
+      "th": 82.06,
+      "cbth": 117.66,
+      "stk2": 82.06
     },
     {
       "cb": "84332",
@@ -4244,11 +4244,11 @@
       "name": "弘帆二",
       "ind": "其他電子",
       "conv": 87.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.6,
+      "sp": 52.8,
+      "th": 60.34,
+      "cbth": 165.06,
+      "stk2": 60.34
     },
     {
       "cb": "84333",
@@ -4256,11 +4256,11 @@
       "name": "弘帆三",
       "ind": "其他電子",
       "conv": 91.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.3,
+      "sp": 52.8,
+      "th": 57.96,
+      "cbth": 173.05,
+      "stk2": 57.96
     },
     {
       "cb": "84422",
@@ -4268,11 +4268,11 @@
       "name": "威宏二KY",
       "ind": "其他",
       "conv": 73.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.7,
+      "sp": 40.0,
+      "th": 54.13,
+      "cbth": 184.19,
+      "stk2": 54.13
     },
     {
       "cb": "84624",
@@ -4280,11 +4280,11 @@
       "name": "柏文四",
       "ind": "健身",
       "conv": 152.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 113.05,
+      "sp": 141.0,
+      "th": 92.64,
+      "cbth": 122.03,
+      "stk2": 92.64
     },
     {
       "cb": "84662",
@@ -4292,11 +4292,11 @@
       "name": "美吉吉二KY",
       "ind": "其他",
       "conv": 48.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 98.55,
+      "sp": 16.45,
+      "th": 34.13,
+      "cbth": 288.75,
+      "stk2": 34.13
     },
     {
       "cb": "84672",
@@ -4304,11 +4304,11 @@
       "name": "波力二KY",
       "ind": "運動休閒",
       "conv": 188.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 107.5,
+      "sp": 129.5,
+      "th": 68.55,
+      "cbth": 156.82,
+      "stk2": 68.55
     },
     {
       "cb": "84673",
@@ -4316,11 +4316,11 @@
       "name": "波力三KY",
       "ind": "運動休閒",
       "conv": 230.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 102.25,
+      "sp": 129.5,
+      "th": 56.21,
+      "cbth": 181.91,
+      "stk2": 56.21
     },
     {
       "cb": "84732",
@@ -4328,11 +4328,11 @@
       "name": "山林水二",
       "ind": "環保",
       "conv": 34.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 162.0,
+      "sp": 54.6,
+      "th": 160.12,
+      "cbth": 101.17,
+      "stk2": 160.12
     },
     {
       "cb": "84762",
@@ -4340,11 +4340,11 @@
       "name": "台境二",
       "ind": "—",
       "conv": 19.7,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 90.0,
+      "sp": 15.65,
+      "th": 79.44,
+      "cbth": 113.29,
+      "stk2": 79.44
     },
     {
       "cb": "84781",
@@ -4352,11 +4352,11 @@
       "name": "東哥遊艇一",
       "ind": "遊艇",
       "conv": 369.5,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 93.35,
+      "sp": 159.0,
+      "th": 43.03,
+      "cbth": 216.94,
+      "stk2": 43.03
     },
     {
       "cb": "84881",
@@ -4364,11 +4364,11 @@
       "name": "吉源一KY",
       "ind": "其他",
       "conv": 18.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.6,
+      "sp": 10.1,
+      "th": 54.89,
+      "cbth": 181.45,
+      "stk2": 54.89
     },
     {
       "cb": "84891",
@@ -4376,11 +4376,11 @@
       "name": "三貝德一",
       "ind": "—",
       "conv": 27.9,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 115.0,
+      "sp": 23.4,
+      "th": 83.87,
+      "cbth": 137.12,
+      "stk2": 83.87
     },
     {
       "cb": "89277",
@@ -4388,11 +4388,11 @@
       "name": "北基七",
       "ind": "食品",
       "conv": 50.79,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 100.75,
+      "sp": 20.0,
+      "th": 39.38,
+      "cbth": 255.84,
+      "stk2": 39.38
     },
     {
       "cb": "89278",
@@ -4400,11 +4400,11 @@
       "name": "北基八",
       "ind": "食品",
       "conv": 47.4,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 99.7,
+      "sp": 20.0,
+      "th": 42.19,
+      "cbth": 236.31,
+      "stk2": 42.19
     },
     {
       "cb": "89964",
@@ -4412,11 +4412,11 @@
       "name": "高力四",
       "ind": "機械",
       "conv": 232.2,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 470.0,
+      "sp": 1120.0,
+      "th": 482.34,
+      "cbth": 97.44,
+      "stk2": 482.34
     },
     {
       "cb": "98026",
@@ -4424,11 +4424,11 @@
       "name": "鈺齊六KY",
       "ind": "紡織",
       "conv": 104.1,
-      "cbp": null,
-      "sp": null,
-      "th": null,
-      "cbth": null,
-      "stk2": null
+      "cbp": 101.5,
+      "sp": 80.4,
+      "th": 77.23,
+      "cbth": 131.43,
+      "stk2": 77.23
     }
   ]
 }
